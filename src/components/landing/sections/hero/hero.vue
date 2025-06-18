@@ -99,7 +99,7 @@
 
         <!-- Right Column - Illustration -->
         <div class="w-full max-w-lg">
-          <Student />
+          <Student class="hidden lg:block" />
         </div>
       </div>
     </div>
