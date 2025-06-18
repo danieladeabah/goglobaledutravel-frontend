@@ -3,9 +3,7 @@
     <div
       class="container mx-auto flex flex-col items-center justify-between space-y-4 px-4 text-center md:flex-row md:space-y-0 md:text-left"
     >
-      <div class="copyright">
-        Copyright © 2025, goglobaledutravel.com, All rights reserved.
-      </div>
+      <div class="copyright">Copyright © 2025, All rights reserved.</div>
       <div
         class="grid grid-cols-3 gap-0 border-t border-gray-200 pt-4 md:gap-3 md:border-0 md:pt-0"
       >

@@ -65,7 +65,7 @@
     <!-- Main Content -->
     <div class="container relative z-10 mx-auto px-4">
       <div
-        class="flex flex-col items-center lg:flex-row lg:items-start lg:justify-between"
+        class="grid grid-cols-1 gap-0 md:grid-cols-2 md:items-center md:gap-8 lg:gap-4"
       >
         <!-- Left Column - Text Content -->
         <div class="mb-8 max-w-lg md:mb-0 md:pr-8">
