@@ -10,8 +10,8 @@ Ensure you have the following installed:
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/lo-tte-ry.git
-cd lotto-predictions
+git clone https://github.com/danieladeabah/study-abroad-frontend.git
+cd study-abroad-frontend
 ```
 
 ### Install Dependencies
