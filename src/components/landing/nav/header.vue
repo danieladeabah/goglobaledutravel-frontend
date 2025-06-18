@@ -1,6 +1,6 @@
 <template>
   <header class="bg-white py-4 shadow-sm">
-    <div class="mx-auto w-full max-w-7xl px-4">
+    <div class="container mx-auto px-4">
       <div class="flex flex-col items-center justify-between lg:flex-row">
         <div class="logo">
           <NuxtLink to="/">
@@ -12,11 +12,11 @@
             <span class="text-red-600">
               <CallBack />
             </span>
-            <div class="flex flex-col gap-2 lg:flex-row lg:items-center">
+            <div class="flex items-center gap-2">
               <p class="m-0 text-base text-gray-600 lg:text-2xl">
                 Request Call Back:
               </p>
-              <p class="m-0 text-2xl font-bold text-gray-800">024-1234567</p>
+              <p class="m-0 text-2xl font-bold text-gray-800">024-1234-567</p>
             </div>
           </div>
         </div>
@@ -26,6 +26,6 @@
 </template>
 
 <script setup>
-import CallBack from '@/assets/icons/caller.vue'
+import CallBack from '~/assets/icons/caller-icon.vue'
 import Logo from '@/assets/icons/canam-logo.vue'
 </script>
