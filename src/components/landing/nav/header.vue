@@ -1,18 +1,21 @@
 <template>
-  <header class="bg-white py-4 shadow-sm">
+  <header class="fixed left-0 right-0 top-0 z-50 bg-white py-2 lg:shadow-sm">
     <div class="container mx-auto px-4">
-      <div class="flex flex-col items-center justify-between lg:flex-row">
+      <div class="flex items-center justify-between">
         <div class="logo">
           <NuxtLink to="/">
-            <Logo />
+            <Logo class="h-14 w-14 lg:h-auto lg:w-auto" />
           </NuxtLink>
         </div>
         <div class="contact">
           <div class="flex items-center gap-2.5">
-            <span class="text-red-600">
-              <CallBack />
-            </span>
-            <div class="flex items-center gap-2">
+            <a
+              href="tel:0241234567"
+              class="text-red-600 transition-colors hover:text-red-700"
+            >
+              <CallBack class="h-5 w-5 lg:h-auto lg:w-auto" />
+            </a>
+            <div class="hidden items-center gap-2 sm:flex">
               <p class="m-0 text-base text-gray-600 lg:text-2xl">
                 Request Call Back:
               </p>
@@ -23,6 +26,8 @@
       </div>
     </div>
   </header>
+  <!-- Spacer to prevent content from hiding under the fixed header -->
+  <div class="h-[40px] lg:h-[60px]"></div>
 </template>
 
 <script setup>

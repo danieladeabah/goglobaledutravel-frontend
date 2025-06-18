@@ -8,7 +8,9 @@
         What our students say about our services
       </p>
 
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div
+        class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      >
         <!-- Display testimonials based on current index -->
         <div
           v-for="(testimonial, index) in visibleTestimonials"
@@ -23,7 +25,7 @@
             <img
               :src="testimonial.image"
               :alt="testimonial.name"
-              class="mr-4 h-12 w-12 rounded-full"
+              class="mr-4 h-12 w-12 rounded-full object-cover"
             />
             <div>
               <p class="font-bold">{{ testimonial.name }}</p>
@@ -86,6 +88,12 @@
 </template>
 
 <script setup>
+import profile1 from '@/assets/images/profiles/profile-1.jpg'
+import profile2 from '@/assets/images/profiles/profile-2.jpg'
+import profile3 from '@/assets/images/profiles/profile-3.jpg'
+import profile4 from '@/assets/images/profiles/profile-4.jpg'
+import profile5 from '@/assets/images/profiles/profile-5.jpg'
+
 // List of testimonials
 const testimonials = ref([
   {
@@ -93,35 +101,35 @@ const testimonials = ref([
       'Excellent guiding instructions. They are all great mentors at life and career. Best out of the best in the career counselling. Best out of the best in the career counselling.',
     name: 'Anshul Sharma',
     title: 'Bachelors, University of Toronto',
-    image: '@/assets/images/profiles/profile-1.jpg'
+    image: profile1
   },
   {
     content:
       'The process was very simple and easy to go through. Before CANAM I thought this gonna burn a hole in my pocket but I am very happy the way it turned out.',
     name: 'Shravan Rathore',
     title: 'Bachelors, University of New York',
-    image: '@/assets/images/profiles/profile-2.jpg'
+    image: profile2
   },
   {
     content:
       'I am currently employed at one the biggest companies in the world. All thanks to CANAM for opening door to USA for me and I love every step I ever took.',
     name: 'Neha Agarwal',
     title: 'Visual Designer, Cuatro, USA',
-    image: '@/assets/images/profiles/profile-3.jpg'
+    image: profile3
   },
   {
     content:
       'The support throughout my application process was incredible. Their expertise on visa requirements saved me from potential delays and ensured a smooth transition.',
     name: 'Raj Patel',
     title: 'Masters, University of Melbourne',
-    image: '@/assets/images/profiles/profile-4.jpg'
+    image: profile4
   },
   {
     content:
       "Without their scholarship guidance, I wouldn't have received the funding that made my international education possible. They truly care about student success.",
     name: 'Priya Singh',
     title: 'PhD Candidate, MIT',
-    image: '@/assets/images/profiles/profile-5.jpg'
+    image: profile5
   }
 ])
 

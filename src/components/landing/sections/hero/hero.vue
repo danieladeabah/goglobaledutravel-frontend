@@ -95,10 +95,11 @@
             <Arrow class="rotate-180" :fill-color="'#FFFFFF'" />
           </a>
         </div>
+        <LandingSectionsHeroInsights />
 
         <!-- Right Column - Illustration -->
         <div class="w-full max-w-lg">
-          <Student />
+          <Student class="hidden lg:block" />
         </div>
       </div>
     </div>
