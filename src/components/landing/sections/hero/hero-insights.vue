@@ -4,7 +4,7 @@
       <div
         v-for="(insight, index) in insights"
         :key="index"
-        class="min-w-[120px] flex-1 rounded-lg bg-white/90 p-4 text-center transition-all duration-300 ease-in-out hover:translate-y-[-5px] hover:shadow-lg"
+        class="min-w-[120px] flex-1 rounded-lg bg-white/90 p-4 text-center"
       >
         <div v-if="insight.icon" class="mb-2 text-[#b30101]">
           <component :is="insight.icon" :width="20" :height="20" />

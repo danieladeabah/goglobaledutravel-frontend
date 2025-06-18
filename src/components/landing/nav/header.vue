@@ -1,10 +1,10 @@
 <template>
-  <header class="fixed left-0 right-0 top-0 z-50 bg-white py-2 lg:shadow-sm">
+  <header class="fixed left-0 right-0 top-0 z-50 bg-white py-4 shadow-sm">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between">
         <div class="logo">
-          <NuxtLink to="/">
-            <Logo class="h-14 w-14 lg:h-auto lg:w-auto" />
+          <NuxtLink to="/" class="flex text-xl font-bold text-red-600">
+            <span class="font-serif text-gray-800">GO🎓</span>Travel
           </NuxtLink>
         </div>
         <div class="contact">
@@ -27,10 +27,10 @@
     </div>
   </header>
   <!-- Spacer to prevent content from hiding under the fixed header -->
-  <div class="h-[40px] lg:h-[60px]"></div>
+  <div class="h-[50px]"></div>
 </template>
 
 <script setup>
 import CallBack from '~/assets/icons/caller-icon.vue'
-import Logo from '@/assets/icons/canam-logo.vue'
+// import Logo from '@/assets/icons/goglobal-logo.png'
 </script>

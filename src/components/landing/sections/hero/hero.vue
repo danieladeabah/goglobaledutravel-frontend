@@ -65,7 +65,7 @@
     <!-- Main Content -->
     <div class="container relative z-10 mx-auto px-4">
       <div
-        class="flex flex-col items-center md:flex-row md:items-start md:justify-between"
+        class="flex flex-col items-center lg:flex-row lg:items-start lg:justify-between"
       >
         <!-- Left Column - Text Content -->
         <div class="mb-8 max-w-lg md:mb-0 md:pr-8">
@@ -74,10 +74,10 @@
             with
           </p>
           <h1
-            class="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl"
+            class="mb-4 text-4xl font-medium leading-tight text-gray-900 md:text-5xl"
           >
             <span class="text-gray-400">Premium </span>
-            <span class="text-gray-900 underline">Study Abroad </span>
+            <span class="font-bold text-gray-900 underline">Study Abroad </span>
             <span class="text-gray-400">Counselling </span>
             <span class="text-gray-600">for Your </span>
             <span class="text-gray-400">Dream University</span>
@@ -87,20 +87,20 @@
             throughout the application journey and beyond. Personalized services
             for undergrad, master's, PhD, and MBA aspirants.
           </p>
-          <a
-            href="#"
-            class="inline-flex items-center rounded-md bg-red-600 px-6 py-3 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+          <NuxtLink
+            to="/consultation"
+            class="inline-flex items-center rounded-full bg-red-600 px-6 py-3 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
           >
             Book Free Consultation
             <Arrow class="rotate-180" :fill-color="'#FFFFFF'" />
-          </a>
+          </NuxtLink>
         </div>
-        <LandingSectionsHeroInsights />
 
         <!-- Right Column - Illustration -->
         <div class="w-full max-w-lg">
-          <Student class="hidden lg:block" />
+          <Student class="hidden md:block" />
         </div>
+        <LandingSectionsHeroInsights />
       </div>
     </div>
   </section>

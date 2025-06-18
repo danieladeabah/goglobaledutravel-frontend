@@ -4,10 +4,10 @@
       class="container mx-auto flex flex-col items-center justify-between space-y-4 px-4 text-center md:flex-row md:space-y-0 md:text-left"
     >
       <div class="copyright">
-        Copyright © 2025 Canam Group All rights reserved.
+        Copyright © 2025, goglobaledutravel.com, All rights reserved.
       </div>
       <div
-        class="grid grid-cols-3 gap-0 border-t border-gray-200 pt-4 md:pt-0 lg:gap-3 lg:border-0"
+        class="grid grid-cols-3 gap-0 border-t border-gray-200 pt-4 md:gap-3 md:border-0 md:pt-0"
       >
         <nuxt-link to="/disclaimer" class="text-gray-500 hover:underline"
           >Disclaimer</nuxt-link
@@ -23,5 +23,12 @@
         >
       </div>
     </div>
+
+    <!-- Include the ChatBot component -->
+    <ChatBot />
   </footer>
 </template>
+
+<script setup>
+import ChatBot from '~/components/common/chat-bot.vue'
+</script>
