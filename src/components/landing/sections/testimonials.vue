@@ -15,21 +15,25 @@
         <div
           v-for="(testimonial, index) in visibleTestimonials"
           :key="index"
-          class="rounded-lg bg-gray-50 p-6"
+          class="flex h-full flex-col justify-between rounded-lg bg-gray-50 p-6"
         >
-          <div class="mb-4 font-serif text-4xl text-red-500">"</div>
-          <p class="mb-6">
-            {{ testimonial.content }}
-          </p>
-          <div class="flex items-center">
-            <img
-              :src="testimonial.image"
-              :alt="testimonial.name"
-              class="mr-4 h-12 w-12 rounded-full object-cover"
-            />
-            <div>
-              <p class="font-bold">{{ testimonial.name }}</p>
-              <p class="text-sm text-gray-600">{{ testimonial.title }}</p>
+          <div class="testimonial-content">
+            <div class="mb-4 font-serif text-4xl text-red-500">"</div>
+            <p class="mb-6">
+              {{ testimonial.content }}
+            </p>
+          </div>
+          <div class="user-info mt-auto">
+            <div class="flex items-center">
+              <img
+                :src="testimonial.image"
+                :alt="testimonial.name"
+                class="mr-4 h-12 w-12 rounded-full object-cover"
+              />
+              <div>
+                <p class="font-bold">{{ testimonial.name }}</p>
+                <p class="text-sm text-gray-600">{{ testimonial.title }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -98,21 +102,21 @@ import profile5 from '@/assets/images/profiles/profile-5.jpg'
 const testimonials = ref([
   {
     content:
-      'Excellent guiding instructions. They are all great mentors at life and career. Best out of the best in the career counselling. Best out of the best in the career counselling.',
+      'Excellent guiding instructions. They are all great mentors at life and career. Best out of the best in the career counselling.',
     name: 'Anshul Sharma',
     title: 'Bachelors, University of Toronto',
     image: profile1
   },
   {
     content:
-      'The process was very simple and easy to go through. Before CANAM I thought this gonna burn a hole in my pocket but I am very happy the way it turned out.',
+      'The process was very simple and easy to go through. Before GoGlobalEduTravel I thought this gonna burn a hole in my pocket but I am very happy the way it turned out.',
     name: 'Shravan Rathore',
     title: 'Bachelors, University of New York',
     image: profile2
   },
   {
     content:
-      'I am currently employed at one the biggest companies in the world. All thanks to CANAM for opening door to USA for me and I love every step I ever took.',
+      'I am currently employed at one the biggest companies in the world. All thanks to GoGlobalEduTravel for opening door to USA for me and I love every step I ever took.',
     name: 'Neha Agarwal',
     title: 'Visual Designer, Cuatro, USA',
     image: profile3
