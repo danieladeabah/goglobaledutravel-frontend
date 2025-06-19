@@ -22,8 +22,8 @@
       </div>
     </div>
 
-    <!-- Include the ChatBot component -->
-    <ChatBot />
+    <!-- Chatbot -->
+    <ChatBot :breathing="true" />
   </footer>
 </template>
 
