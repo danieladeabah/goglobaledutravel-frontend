@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between">
         <div class="logo">
           <NuxtLink to="/" class="flex text-xl font-bold text-red-600">
-            <span class="font-serif text-gray-800">GO🎓</span>Travel
+            <span class="font-mono text-gray-800">(./gG🎓)</span>Travel
           </NuxtLink>
         </div>
         <div class="contact">
