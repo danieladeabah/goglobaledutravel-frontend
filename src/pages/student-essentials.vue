@@ -2,9 +2,7 @@
   <NuxtLayout :name="'landing-wrapper'">
     <div class="bg-white">
       <!-- Hero Section -->
-      <div
-        class="bg-gradient-to-r from-emerald-600 to-teal-700 py-12 text-white"
-      >
+      <div class="bg-gradient-to-r from-red-600 to-red-700 py-12 text-white">
         <div class="container mx-auto px-4">
           <h1 class="mb-4 text-4xl font-bold">Student Essentials</h1>
           <p class="max-w-3xl text-xl">
@@ -20,11 +18,11 @@
         <section class="mb-16">
           <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div
-              class="rounded-xl bg-emerald-50 p-6 text-center transition-shadow hover:shadow-lg"
+              class="rounded-xl bg-red-50 p-6 text-center transition-shadow hover:shadow-lg"
             >
               <Icon
                 name="heroicons:document-check"
-                class="mx-auto mb-4 h-12 w-12 text-emerald-600"
+                class="mx-auto mb-4 h-12 w-12 text-red-600"
               />
               <h3 class="mb-2 text-lg font-semibold">Visa Requirements</h3>
               <p class="text-gray-600">
@@ -32,36 +30,36 @@
                 visas
               </p>
               <button
-                class="mt-4 rounded-md bg-emerald-600 px-4 py-2 text-white transition-colors hover:bg-emerald-700"
+                class="mt-4 rounded-md bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700"
               >
                 Learn More
               </button>
             </div>
 
             <div
-              class="rounded-xl bg-teal-50 p-6 text-center transition-shadow hover:shadow-lg"
+              class="rounded-xl bg-red-50 p-6 text-center transition-shadow hover:shadow-lg"
             >
               <Icon
                 name="heroicons:home"
-                class="mx-auto mb-4 h-12 w-12 text-teal-600"
+                class="mx-auto mb-4 h-12 w-12 text-red-600"
               />
               <h3 class="mb-2 text-lg font-semibold">Accommodation</h3>
               <p class="text-gray-600">
                 Housing options, dorm information, and rental assistance abroad
               </p>
               <button
-                class="mt-4 rounded-md bg-teal-600 px-4 py-2 text-white transition-colors hover:bg-teal-700"
+                class="mt-4 rounded-md bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700"
               >
                 Find Housing
               </button>
             </div>
 
             <div
-              class="rounded-xl bg-emerald-50 p-6 text-center transition-shadow hover:shadow-lg"
+              class="rounded-xl bg-red-50 p-6 text-center transition-shadow hover:shadow-lg"
             >
               <Icon
                 name="heroicons:currency-dollar"
-                class="mx-auto mb-4 h-12 w-12 text-emerald-600"
+                class="mx-auto mb-4 h-12 w-12 text-red-600"
               />
               <h3 class="mb-2 text-lg font-semibold">Financial Planning</h3>
               <p class="text-gray-600">
@@ -69,7 +67,7 @@
                 resources
               </p>
               <button
-                class="mt-4 rounded-md bg-emerald-600 px-4 py-2 text-white transition-colors hover:bg-emerald-700"
+                class="mt-4 rounded-md bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700"
               >
                 Financial Tools
               </button>
@@ -172,7 +170,7 @@
           </div>
           <div class="mt-4 text-center">
             <button
-              class="rounded-md bg-teal-600 px-6 py-2 text-white transition-colors hover:bg-teal-700"
+              class="rounded-md bg-red-600 px-6 py-2 text-white transition-colors hover:bg-red-700"
             >
               Download Complete Checklist PDF
             </button>
@@ -216,7 +214,7 @@
                 <div class="flex items-center rounded bg-white p-3 shadow-sm">
                   <Icon
                     name="heroicons:shield-check"
-                    class="mr-3 h-8 w-8 text-teal-600"
+                    class="mr-3 h-8 w-8 text-red-600"
                   />
                   <div>
                     <h4 class="font-medium">International Student Insurance</h4>
@@ -228,7 +226,7 @@
                 <div class="flex items-center rounded bg-white p-3 shadow-sm">
                   <Icon
                     name="heroicons:shield-check"
-                    class="mr-3 h-8 w-8 text-teal-600"
+                    class="mr-3 h-8 w-8 text-red-600"
                   />
                   <div>
                     <h4 class="font-medium">WorldCare Student Health</h4>
@@ -240,7 +238,7 @@
                 <div class="flex items-center rounded bg-white p-3 shadow-sm">
                   <Icon
                     name="heroicons:shield-check"
-                    class="mr-3 h-8 w-8 text-teal-600"
+                    class="mr-3 h-8 w-8 text-red-600"
                   />
                   <div>
                     <h4 class="font-medium">EduHealth Global</h4>
@@ -351,14 +349,14 @@
             >
               <Icon
                 name="heroicons:document-text"
-                class="mx-auto mb-4 h-12 w-12 text-emerald-600"
+                class="mx-auto mb-4 h-12 w-12 text-red-600"
               />
               <h3 class="mb-2 text-lg font-semibold">Country Guides</h3>
               <p class="mb-4 text-gray-600">
                 Detailed information about popular study destinations
               </p>
               <button
-                class="rounded-md bg-emerald-600 px-4 py-2 text-white transition-colors hover:bg-emerald-700"
+                class="rounded-md bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700"
               >
                 Download Guides
               </button>
@@ -369,14 +367,14 @@
             >
               <Icon
                 name="heroicons:clipboard-document-list"
-                class="mx-auto mb-4 h-12 w-12 text-teal-600"
+                class="mx-auto mb-4 h-12 w-12 text-red-600"
               />
               <h3 class="mb-2 text-lg font-semibold">Packing Lists</h3>
               <p class="mb-4 text-gray-600">
                 Customized packing guides for different destinations
               </p>
               <button
-                class="rounded-md bg-teal-600 px-4 py-2 text-white transition-colors hover:bg-teal-700"
+                class="rounded-md bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700"
               >
                 Get Packing Lists
               </button>
@@ -387,14 +385,14 @@
             >
               <Icon
                 name="heroicons:calculator"
-                class="mx-auto mb-4 h-12 w-12 text-emerald-600"
+                class="mx-auto mb-4 h-12 w-12 text-red-600"
               />
               <h3 class="mb-2 text-lg font-semibold">Budget Planners</h3>
               <p class="mb-4 text-gray-600">
                 Tools to help manage expenses while studying abroad
               </p>
               <button
-                class="rounded-md bg-emerald-600 px-4 py-2 text-white transition-colors hover:bg-emerald-700"
+                class="rounded-md bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700"
               >
                 Access Planners
               </button>
@@ -403,7 +401,7 @@
         </section>
 
         <!-- Contact CTA -->
-        <section class="rounded-xl bg-emerald-50 p-8">
+        <section class="rounded-xl bg-red-50 p-8">
           <div class="mx-auto max-w-2xl text-center">
             <h2 class="mb-4 text-2xl font-bold text-gray-800">
               Need Personalized Assistance?
@@ -414,12 +412,12 @@
             </p>
             <div class="flex flex-col justify-center gap-4 sm:flex-row">
               <button
-                class="rounded-md bg-emerald-600 px-6 py-3 text-white transition-colors hover:bg-emerald-700"
+                class="rounded-md bg-red-600 px-6 py-3 text-white transition-colors hover:bg-red-700"
               >
                 Schedule a Consultation
               </button>
               <button
-                class="rounded-md border border-emerald-600 px-6 py-3 text-emerald-600 transition-colors hover:bg-emerald-50"
+                class="rounded-md border border-red-600 px-6 py-3 text-red-600 transition-colors hover:bg-red-50"
               >
                 Contact an Advisor
               </button>
