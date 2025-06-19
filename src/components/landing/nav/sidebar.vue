@@ -1,7 +1,7 @@
 <template>
   <aside
     :class="[
-      'z-45 fixed inset-y-0 left-0 transform overflow-y-auto bg-white p-4 transition-all duration-300 ease-in-out',
+      'z-45 fixed inset-y-0 left-0 transform overflow-y-auto border-r border-gray-100 bg-white p-4 transition-all duration-300 ease-in-out',
       isOpen ? 'w-64 translate-x-0' : 'w-0 -translate-x-full opacity-0'
     ]"
   >

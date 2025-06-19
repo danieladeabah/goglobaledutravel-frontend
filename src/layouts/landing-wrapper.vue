@@ -1,6 +1,6 @@
 <template>
   <div class="flex bg-white dark:bg-gray-900">
-    <CommonSidebar :is-open="isSidebarOpen" @close="closeSidebar" />
+    <LandingNavSidebar :is-open="isSidebarOpen" @close="closeSidebar" />
 
     <div
       class="flex-grow transition-all duration-300"
@@ -21,8 +21,6 @@
 </template>
 
 <script setup>
-import { ref, provide } from 'vue'
-
 const isSidebarOpen = ref(false)
 
 const toggleSidebar = () => {
@@ -40,7 +38,3 @@ provide('sidebarState', {
   closeSidebar
 })
 </script>
-
-<style scoped>
-/* No additional styles needed - we're using Tailwind classes */
-</style>
