@@ -1,17 +1,17 @@
 <template>
+  <!-- Overlay for mobile -->
+  <div
+    v-if="isOpen"
+    class="fixed inset-0 z-10 bg-black bg-opacity-50 transition-opacity lg:hidden"
+    @click="$emit('close')"
+  ></div>
+
   <aside
     :class="[
-      'z-45 fixed inset-y-0 left-0 z-20 transform overflow-y-auto border-r border-gray-100 bg-white p-4 transition-all duration-300 ease-in-out',
+      'fixed inset-y-0 left-0 z-20 transform overflow-y-auto border-r border-gray-100 bg-white p-4 transition-all duration-300 ease-in-out',
       isOpen ? 'w-64 translate-x-0' : 'w-0 -translate-x-full opacity-0'
     ]"
   >
-    <!-- Overlay for mobile -->
-    <div
-      v-if="isOpen"
-      class="fixed inset-0 z-40 bg-opacity-75 transition-opacity lg:hidden"
-      @click="$emit('close')"
-    ></div>
-
     <div v-if="isOpen" class="flex h-full flex-col">
       <!-- Sidebar header with close button (mobile only) -->
       <div class="mb-8 flex items-center justify-between">
