@@ -5,7 +5,7 @@
       <div class="mb-6">
         <NuxtLink
           to="/"
-          class="inline-flex items-center rounded-full border bg-gray-50 bg-opacity-50 px-4 py-2 text-red-600 transition-all duration-200 ease-in-out hover:bg-gray-100 hover:text-red-700 hover:shadow-sm"
+          class="inline-flex items-center rounded-full border px-4 py-1 text-red-600 transition-all duration-200 ease-in-out hover:bg-gray-100 hover:text-red-700 hover:shadow-sm"
         >
           <ArrowLeftIcon class="mr-2 h-5 w-5" />
           <span>Home</span>
@@ -15,7 +15,7 @@
       <!-- Header Section -->
       <div class="mb-10 text-center">
         <h1 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-          Book Your Free Consultation
+          Book Your Premium Consultation
         </h1>
         <p class="mx-auto mt-4 max-w-2xl text-xl text-gray-500">
           Let our experts help you chart your path to academic success abroad
@@ -33,7 +33,7 @@
               </div>
               <div class="ml-4">
                 <h2 class="text-lg font-medium text-gray-900">
-                  Personal Consultation Session
+                  Consultation Session
                 </h2>
                 <p class="text-sm text-gray-500">
                   Fill out this form to schedule a one-on-one session with our
@@ -265,7 +265,7 @@
                   :disabled="isSubmitting"
                 >
                   <span v-if="isSubmitting">Processing...</span>
-                  <span v-else>Book Consultation</span>
+                  <span v-else>Book Now</span>
                 </button>
               </div>
             </form>
