@@ -4,7 +4,11 @@
       <div class="flex items-center justify-between">
         <div class="logo">
           <NuxtLink to="/" class="flex text-xl font-bold text-red-600">
-            <span class="font-mono text-gray-800">(./gG🎓)</span>Travel
+            <img
+              src="@/assets/icons/goglobal-logo.png"
+              alt=""
+              class="h-8 w-auto"
+            />
           </NuxtLink>
         </div>
         <div class="contact">
@@ -32,5 +36,4 @@
 
 <script setup>
 import CallBack from '~/assets/icons/caller-icon.vue'
-// import Logo from '@/assets/icons/goglobal-logo.png'
 </script>
