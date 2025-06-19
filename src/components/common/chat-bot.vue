@@ -49,7 +49,9 @@
       class="fixed bottom-24 right-6 z-50 flex h-96 w-80 flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out"
     >
       <div class="flex items-center justify-between bg-red-500 p-4 text-white">
-        <h3 class="font-medium">Chat with GoglobalEduTravel</h3>
+        <h3 class="font-medium">
+          Chat with <span class="font-mono text-gray-800">(./gG🎓)</span>Travel
+        </h3>
         <button @click="toggleChatbot" class="focus:outline-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,28 +88,30 @@
         </div>
       </div>
 
-      <div class="w-fit p-3 lg:w-full lg:border-t lg:border-gray-200">
-        <form @submit.prevent="sendMessage" class="flex">
+      <div class="border-t border-gray-200 p-2 sm:p-3">
+        <form @submit.prevent="sendMessage" class="flex w-full items-center">
           <input
             type="text"
             v-model="messageInput"
             placeholder="Type your message..."
-            class="flex-1 rounded-l-lg border border-gray-300 px-3 py-2 focus:border-red-500 focus:outline-none"
+            class="min-w-0 flex-1 rounded-l-lg border border-gray-300 px-2 py-[0.54rem] text-sm focus:border-red-500 focus:outline-none sm:px-3 sm:text-base"
           />
           <button
             type="submit"
-            class="rounded-r-lg bg-red-500 px-4 py-2 text-white hover:bg-red-600 focus:outline-none"
+            class="flex items-center justify-center rounded-r-lg bg-red-500 px-3 py-3 text-white hover:bg-red-600 focus:outline-none sm:px-4"
+            aria-label="Send message"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="16"
+              height="16"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
+              class="sm:h-5 sm:w-5"
             >
               <line x1="22" y1="2" x2="11" y2="13"></line>
               <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
