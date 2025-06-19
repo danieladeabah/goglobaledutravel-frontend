@@ -4,7 +4,7 @@
       <div
         v-for="(insight, index) in insights"
         :key="index"
-        class="min-w-[120px] flex-1 rounded-lg bg-white/90 p-4 text-center"
+        class="flex min-h-[140px] min-w-[120px] flex-1 flex-col rounded-lg bg-white/90 p-4 text-center"
       >
         <div v-if="insight.icon" class="mb-2 text-[#b30101]">
           <component :is="insight.icon" :width="20" :height="20" />
@@ -12,7 +12,7 @@
         <div class="mb-2 text-[1.8rem] font-bold text-[#b30101]">
           <span ref="counterRefs">0</span>{{ insight.suffix }}
         </div>
-        <div class="text-[0.9rem] font-medium text-[#4a4b4d]">
+        <div class="mt-auto text-[0.9rem] font-medium text-[#4a4b4d]">
           {{ insight.label }}
         </div>
       </div>
@@ -24,6 +24,7 @@
 import InstituteIcon from '@/assets/icons/institute-icon.vue'
 import CounsellingIcon from '@/assets/icons/counselling-icon.vue'
 import ApplicationIcon from '@/assets/icons/application-icon.vue'
+import VisaIcon from '@/assets/icons/visa-icon.vue'
 
 const props = defineProps({
   insights: {
@@ -42,7 +43,7 @@ const props = defineProps({
         label: 'Partner universities',
         icon: InstituteIcon
       },
-      { number: 25, suffix: '+', label: 'Countries', icon: null }
+      { number: 25, suffix: '+', label: 'Countries', icon: VisaIcon }
     ]
   }
 })
