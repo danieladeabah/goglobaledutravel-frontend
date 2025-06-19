@@ -29,12 +29,19 @@
       <div class="flex-1 space-y-1">
         <div v-for="(item, index) in navigationItems" :key="index" class="py-1">
           <NuxtLink
-            :to="item.to"
+            :to="item.disabled ? '#' : item.to"
+            @click.prevent="item.disabled ? null : navigateTo(item.to)"
             class="flex items-center rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            :class="{ 'bg-gray-100 font-medium text-gray-900': item.active }"
+            :class="{
+              'bg-gray-100 font-medium text-gray-900': item.active,
+              'cursor-not-allowed opacity-70 blur-[1px] filter': item.disabled
+            }"
           >
             <Icon :name="item.icon" class="mr-3 h-5 w-5" />
             {{ item.name }}
+            <span v-if="item.disabled" class="ml-2 text-xs text-gray-500"
+              >(Soon)</span
+            >
           </NuxtLink>
         </div>
       </div>
@@ -77,6 +84,12 @@ defineProps({
 
 defineEmits(['close'])
 
+const router = useRouter()
+
+const navigateTo = path => {
+  router.push(path)
+}
+
 // Navigation items with icons
 const navigationItems = [
   {
@@ -92,19 +105,14 @@ const navigationItems = [
   {
     name: 'Find a Course',
     to: '/find-course',
-    icon: 'heroicons:magnifying-glass'
+    icon: 'heroicons:magnifying-glass',
+    disabled: true
   },
   { name: 'IELTS', to: '/ielts', icon: 'heroicons:language' },
   {
     name: 'Student Essentials',
     to: '/student-essentials',
     icon: 'heroicons:book-open'
-  },
-  {
-    name: 'Programs',
-    to: '/programs',
-    icon: 'heroicons:clipboard-document-list'
-  },
-  { name: 'Schedules', to: '/schedules', icon: 'heroicons:calendar' }
+  }
 ]
 </script>
