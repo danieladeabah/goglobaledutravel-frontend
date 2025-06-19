@@ -103,35 +103,35 @@ const testimonials = ref([
   {
     content:
       'Excellent guiding instructions. They are all great mentors at life and career. Best out of the best in the career counselling.',
-    name: 'Anshul Sharma',
+    name: 'Kwame Addo',
     title: 'Bachelors, University of Toronto',
     image: profile1
   },
   {
     content:
       'The process was very simple and easy to go through. Before GoGlobalEduTravel I thought this gonna burn a hole in my pocket but I am very happy the way it turned out.',
-    name: 'Shravan Rathore',
+    name: 'Chidi Okonkwo',
     title: 'Bachelors, University of New York',
     image: profile2
   },
   {
     content:
       'I am currently employed at one the biggest companies in the world. All thanks to GoGlobalEduTravel for opening door to USA for me and I love every step I ever took.',
-    name: 'Neha Agarwal',
+    name: 'Amara Nwosu',
     title: 'Visual Designer, Cuatro, USA',
     image: profile3
   },
   {
     content:
       'The support throughout my application process was incredible. Their expertise on visa requirements saved me from potential delays and ensured a smooth transition.',
-    name: 'Raj Patel',
+    name: 'Kofi Mensah',
     title: 'Masters, University of Melbourne',
     image: profile4
   },
   {
     content:
       "Without their scholarship guidance, I wouldn't have received the funding that made my international education possible. They truly care about student success.",
-    name: 'Priya Singh',
+    name: 'Fatou Diallo',
     title: 'PhD Candidate, MIT',
     image: profile5
   }

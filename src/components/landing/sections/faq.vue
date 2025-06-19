@@ -50,6 +50,16 @@ const faqItems = [
     question: 'Is this service available online?',
     answer:
       'Yes, our services are available online. We offer virtual consultations, digital document processing, and remote support throughout your application journey, making it convenient for students worldwide to access our expertise regardless of their location.'
+  },
+  {
+    question: 'How long does the application process typically take?',
+    answer:
+      'The application timeline varies depending on the destination country and specific university requirements. Generally, we recommend starting the process 8-12 months before your intended enrollment date. This allows sufficient time for document preparation, entrance exams, visa processing, and accommodation arrangements.'
+  },
+  {
+    question: 'Do you provide visa assistance services?',
+    answer:
+      'Yes, we offer comprehensive visa assistance services. Our team guides you through the entire visa application process, helps prepare the necessary documentation, conducts mock interview sessions, and provides up-to-date information on visa requirements and regulations for your destination country.'
   }
 ]
 
