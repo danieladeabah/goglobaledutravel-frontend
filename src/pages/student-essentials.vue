@@ -413,6 +413,7 @@
             <div class="flex flex-col justify-center gap-4 sm:flex-row">
               <button
                 class="rounded-md bg-red-600 px-6 py-3 text-white transition-colors hover:bg-red-700"
+                @click="navigateTo('/consultation')"
               >
                 Schedule a Consultation
               </button>

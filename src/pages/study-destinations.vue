@@ -1,15 +1,15 @@
 <template>
   <NuxtLayout :name="'landing-wrapper'">
     <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-      <!-- Back button -->
+      <!-- Back button updated to use browser history -->
       <div class="mb-6">
-        <NuxtLink
-          to="/"
+        <button
+          @click="goBack"
           class="inline-flex items-center rounded-full border px-4 py-1 text-red-600 transition-all duration-200 ease-in-out hover:bg-gray-100 hover:text-red-700 hover:shadow-sm"
         >
           <ArrowLeftIcon class="mr-2 h-5 w-5" />
-          <span>Home</span>
-        </NuxtLink>
+          <span>Back</span>
+        </button>
       </div>
 
       <!-- Header Section -->
@@ -154,8 +154,6 @@
 </template>
 
 <script setup>
-import { defineComponent, h, ref, computed } from 'vue'
-
 // Import icon
 const ArrowLeftIcon = defineComponent({
   render: () =>
@@ -177,6 +175,11 @@ const ArrowLeftIcon = defineComponent({
       ]
     )
 })
+
+// Add function to handle browser back navigation
+const goBack = () => {
+  window.history.back()
+}
 
 // Filter and search states
 const filters = ref({

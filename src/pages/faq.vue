@@ -835,6 +835,7 @@
               </NuxtLink>
               <button
                 class="rounded-md border border-emerald-600 px-6 py-3 text-emerald-600 transition-colors hover:bg-emerald-50"
+                @click="navigateTo('/consultation')"
               >
                 Schedule a Consultation
               </button>
@@ -847,8 +848,6 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-
 // State management
 const expandedQuestion = ref(null)
 const searchQuery = ref('')
