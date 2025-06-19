@@ -9,7 +9,7 @@
           <h1 class="mb-4 text-4xl font-bold">About Us</h1>
           <p class="max-w-3xl text-xl">
             Helping students achieve their global education aspirations since
-            2015.
+            2025.
           </p>
         </div>
       </div>
