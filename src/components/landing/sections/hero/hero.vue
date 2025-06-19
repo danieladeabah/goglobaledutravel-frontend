@@ -4,12 +4,12 @@
     <div class="absolute inset-0 z-0">
       <!-- Abstract shapes -->
       <div
-        class="absolute left-1/4 top-1/4 h-16 w-16 rotate-45 transform opacity-10"
+        class="animate-float absolute left-1/4 top-1/4 h-16 w-16 rotate-45 transform opacity-10"
       >
         <div class="h-full w-full rounded-md bg-blue-500"></div>
       </div>
       <div
-        class="absolute right-1/3 top-1/2 h-24 w-24 -rotate-12 transform opacity-10"
+        class="animate-float-delayed absolute right-1/3 top-1/2 h-24 w-24 -rotate-12 transform opacity-10"
       >
         <div class="h-full w-full rounded-full bg-red-500"></div>
       </div>
@@ -21,7 +21,7 @@
         "
       ></div>
       <!-- Graduation cap icon -->
-      <div class="top-1/5 absolute right-1/4 opacity-5">
+      <div class="top-1/5 animate-spin-slow absolute right-1/4 opacity-5">
         <svg
           width="80"
           height="80"
@@ -40,7 +40,7 @@
       </div>
       <!-- World map outline (simplified) -->
       <div
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03]"
+        class="animate-pulse-slow absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03]"
       >
         <svg
           width="600"
@@ -89,7 +89,7 @@
           </p>
           <NuxtLink
             to="/consultation"
-            class="inline-flex items-center rounded-full bg-red-600 px-6 py-3 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+            class="animate-button-breath inline-flex items-center rounded-full bg-red-600 px-6 py-3 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
           >
             Book Your Consultation
             <Arrow class="rotate-180" :fill-color="'#FFFFFF'" />
@@ -110,3 +110,89 @@
 import Arrow from '@/assets/icons/arrow-icon.vue'
 import Student from '@/assets/icons/student-icon.vue'
 </script>
+
+<style scoped>
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+
+  50% {
+    transform: translate(-10px, -15px) rotate(50deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+}
+
+@keyframes float-delayed {
+  0% {
+    transform: translate(0, 0) rotate(-12deg);
+  }
+
+  50% {
+    transform: translate(15px, -10px) rotate(-15deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(-12deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.03;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    opacity: 0.04;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+@keyframes button-breath {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(220, 38, 38, 0.4);
+  }
+
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.6);
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 10s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 15s ease-in-out infinite;
+}
+
+.animate-button-breath {
+  animation: button-breath 3s ease-in-out infinite;
+}
+</style>
