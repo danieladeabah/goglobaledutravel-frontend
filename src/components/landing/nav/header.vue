@@ -2,14 +2,26 @@
   <header class="fixed left-0 right-0 top-0 z-50 bg-white py-4 shadow-sm">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between">
-        <div class="logo">
-          <NuxtLink to="/" class="flex text-xl font-bold text-red-600">
-            <img
-              src="@/assets/icons/goglobal-logo.png"
-              alt=""
-              class="h-8 w-auto"
+        <div class="flex items-center">
+          <button
+            @click="$emit('toggle-sidebar')"
+            class="mr-3 text-gray-600 hover:text-gray-800"
+            aria-label="Toggle sidebar"
+          >
+            <Icon
+              :name="isSidebarOpen ? 'heroicons:x-mark' : 'heroicons:bars-3'"
+              class="h-6 w-6"
             />
-          </NuxtLink>
+          </button>
+          <div class="logo">
+            <NuxtLink to="/" class="flex text-xl font-bold text-red-600">
+              <img
+                src="@/assets/icons/goglobal-logo.png"
+                alt=""
+                class="h-8 w-auto"
+              />
+            </NuxtLink>
+          </div>
         </div>
         <div class="contact">
           <div class="flex items-center gap-2.5">
@@ -36,4 +48,13 @@
 
 <script setup>
 import CallBack from '~/assets/icons/caller-icon.vue'
+
+defineProps({
+  isSidebarOpen: {
+    type: Boolean,
+    default: false
+  }
+})
+
+defineEmits(['toggle-sidebar'])
 </script>
