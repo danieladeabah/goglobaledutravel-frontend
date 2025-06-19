@@ -10,8 +10,8 @@ Ensure you have the following installed:
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/danieladeabah/study-abroad-frontend.git
-cd study-abroad-frontend
+git clone https://github.com/danieladeabah/goglobaledutravel-frontend.git
+cd goglobaledutravel-frontend
 ```
 
 ### Install Dependencies
