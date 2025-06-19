@@ -1,5 +1,7 @@
 <template>
-  <header class="fixed left-0 right-0 top-0 z-50 bg-white py-4 shadow-sm">
+  <header
+    class="fixed left-0 right-0 top-0 z-50 bg-white/70 py-4 shadow-sm backdrop-blur-md"
+  >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between">
         <div class="flex items-center">
