@@ -215,6 +215,7 @@
               </p>
               <button
                 class="rounded-md bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
+                @click="navigateTo('/consultation')"
               >
                 Schedule a Consultation
               </button>
