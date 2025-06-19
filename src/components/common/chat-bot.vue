@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <div class="border-t border-gray-200 p-3">
+      <div class="w-fit p-3 lg:w-full lg:border-t lg:border-gray-200">
         <form @submit.prevent="sendMessage" class="flex">
           <input
             type="text"
@@ -178,7 +178,6 @@ watch(
 
 <style scoped>
 .chat-bot-button {
-  /* Your existing button styles */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -197,108 +196,6 @@ watch(
 
   100% {
     transform: scale(1);
-  }
-}
-
-.chat-panel {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  width: 300px;
-  height: 400px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  max-width: calc(100vw - 40px);
-  /* Ensure it doesn't go off screen */
-}
-
-.chat-header {
-  padding: 10px 15px;
-  background: #3b82f6;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.close-button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.chat-messages {
-  flex-grow: 1;
-  padding: 10px;
-  overflow-y: auto;
-}
-
-.chat-input {
-  display: flex;
-  padding: 10px;
-  border-top: 1px solid #eee;
-  align-items: center;
-}
-
-.chat-input-field {
-  flex: 1;
-  min-width: 0;
-  /* Important for flex items to properly shrink */
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-right: 5px;
-}
-
-.send-button {
-  padding: 8px;
-  min-width: 40px;
-  background: #3b82f6;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  /* Prevent button from shrinking */
-}
-
-.send-text {
-  display: block;
-}
-
-.send-icon {
-  display: none;
-}
-
-/* Mobile responsive styles */
-@media (max-width: 480px) {
-  .chat-panel {
-    bottom: 70px;
-    width: calc(100% - 40px);
-    height: 60vh;
-  }
-
-  .send-text {
-    display: none;
-  }
-
-  .send-icon {
-    display: block;
-    font-size: 16px;
-  }
-
-  .send-button {
-    min-width: 36px;
-    padding: 8px 10px;
   }
 }
 
