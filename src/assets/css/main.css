@@ -7,11 +7,4 @@
 
 * {
   font-family: 'Poppins', sans-serif;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-*::-webkit-scrollbar {
-  display: none;
 }
