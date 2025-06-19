@@ -299,7 +299,7 @@
           </div>
           <div>
             <NuxtLink
-              to="/consultation"
+              to="/consultation?type=course-finding"
               class="inline-flex items-center rounded-md bg-red-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-700"
             >
               Get Expert Advice

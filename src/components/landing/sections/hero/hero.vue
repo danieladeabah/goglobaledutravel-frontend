@@ -88,7 +88,7 @@
             for undergrad, master's, PhD, and MBA aspirants.
           </p>
           <NuxtLink
-            to="/consultation"
+            to="/consultation?type=default"
             class="animate-button-breath inline-flex items-center rounded-full bg-red-600 px-6 py-3 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
           >
             Book Your Consultation

@@ -413,7 +413,7 @@
             <div class="flex flex-col justify-center gap-4 sm:flex-row">
               <button
                 class="rounded-md bg-red-600 px-6 py-3 text-white transition-colors hover:bg-red-700"
-                @click="navigateTo('/consultation')"
+                @click="navigateTo('/consultation?type=student-essentials')"
               >
                 Schedule a Consultation
               </button>
@@ -432,7 +432,7 @@
 
 <script setup>
 useHead({
-  title: 'Student Essentials | Go Global Edu Travel',
+  title: 'Student Essentials | GoGlobalEduTravel',
   meta: [
     {
       name: 'description',
