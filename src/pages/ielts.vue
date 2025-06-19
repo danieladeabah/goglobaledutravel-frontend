@@ -202,7 +202,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="rounded-xl bg-blue-50 p-8">
+        <section class="rounded-xl bg-blue-50 p-4 lg:p-8">
           <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <h2 class="mb-4 text-2xl font-bold text-gray-800">
@@ -215,7 +215,7 @@
               </p>
               <button
                 class="rounded-md bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
-                @click="navigateTo('/consultation')"
+                @click="navigateTo('/consultation?type=ielts')"
               >
                 Schedule a Consultation
               </button>
@@ -226,7 +226,7 @@
                 <div class="flex items-center">
                   <Icon
                     name="heroicons:envelope"
-                    class="mr-2 h-5 w-5 text-blue-600"
+                    class="mr-2 hidden h-5 w-5 text-blue-600 lg:block"
                   />
                   <span>ielts@goglobaledutravel.com</span>
                 </div>
@@ -255,12 +255,12 @@
 
 <script setup>
 useHead({
-  title: 'IELTS Preparation & Testing | Go Global Edu Travel',
+  title: 'IELTS Preparation & Testing | GoGlobalEduTravel',
   meta: [
     {
       name: 'description',
       content:
-        'Learn about IELTS testing, preparation resources, and how Go Global Edu Travel can help you achieve the score you need for academic success abroad.'
+        'Learn about IELTS testing, preparation resources, and how GoGlobalEduTravel can help you achieve the score you need for academic success abroad.'
     }
   ]
 })

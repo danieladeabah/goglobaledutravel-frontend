@@ -186,7 +186,7 @@
                       <a href="#" class="text-emerald-600 hover:underline"
                         >privacy policy</a
                       >
-                      and consent to being contacted by Go Global Edu Travel.
+                      and consent to being contacted by GoGlobalEduTravel.
                     </label>
                   </div>
                 </div>
@@ -278,6 +278,7 @@
               </p>
               <button
                 class="w-full rounded-md bg-emerald-600 px-4 py-2 text-center text-white transition-colors hover:bg-emerald-700"
+                @click="navigateTo('/consultation?type=appointment')"
               >
                 Schedule Now
               </button>
@@ -348,12 +349,12 @@
 
 <script setup>
 useHead({
-  title: 'Contact Us | Go Global Edu Travel',
+  title: 'Contact Us | GoGlobalEduTravel',
   meta: [
     {
       name: 'description',
       content:
-        'Get in touch with Go Global Edu Travel for any inquiries about studying abroad, visa assistance, university applications, or other educational services.'
+        'Get in touch with GoGlobalEduTravel for any inquiries about studying abroad, visa assistance, university applications, or other educational services.'
     }
   ]
 })

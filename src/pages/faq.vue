@@ -655,7 +655,7 @@
                   @click="toggle('q11')"
                 >
                   <span class="font-medium"
-                    >What services does Go Global Edu Travel provide?</span
+                    >What services does GoGlobalEduTravel provide?</span
                   >
                   <Icon
                     :name="
@@ -769,7 +769,7 @@
                   @click="toggle('q13')"
                 >
                   <span class="font-medium"
-                    >How do I get started with Go Global Edu Travel?</span
+                    >How do I get started with GoGlobalEduTravel?</span
                   >
                   <Icon
                     :name="
@@ -876,12 +876,12 @@ const isQuestionVisible = keywords => {
 
 // Page metadata
 useHead({
-  title: 'Frequently Asked Questions | Go Global Edu Travel',
+  title: 'Frequently Asked Questions | GoGlobalEduTravel',
   meta: [
     {
       name: 'description',
       content:
-        'Find answers to frequently asked questions about studying abroad, visa applications, accommodation, finances, and our services at Go Global Edu Travel.'
+        'Find answers to frequently asked questions about studying abroad, visa applications, accommodation, finances, and our services at GoGlobalEduTravel.'
     }
   ]
 })

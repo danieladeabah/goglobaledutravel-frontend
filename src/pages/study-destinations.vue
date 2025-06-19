@@ -142,7 +142,7 @@
         </p>
         <div class="mt-6">
           <NuxtLink
-            to="/consultation"
+            to="/consultation?type=study-destinations"
             class="inline-flex items-center rounded-md bg-white px-6 py-3 text-base font-medium text-red-600 hover:bg-gray-50"
           >
             Book a Free Consultation
@@ -324,7 +324,7 @@ const filteredDestinations = computed(() => {
     }
 
     // Apply search filter if query exists
-    if (
+    return !(
       searchQuery.value &&
       !destination.name
         .toLowerCase()
@@ -332,11 +332,7 @@ const filteredDestinations = computed(() => {
       !destination.description
         .toLowerCase()
         .includes(searchQuery.value.toLowerCase())
-    ) {
-      return false
-    }
-
-    return true
+    )
   })
 })
 </script>
