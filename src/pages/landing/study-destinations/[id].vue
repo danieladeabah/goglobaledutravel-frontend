@@ -55,7 +55,7 @@
             <h2 class="mb-4 text-2xl font-bold text-gray-900">Overview</h2>
             <p class="text-gray-700">{{ destination.description }}</p>
 
-            <div class="mt-6 grid grid-cols-2 gap-4">
+            <div class="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
               <div class="rounded-lg bg-gray-50 p-4">
                 <div class="flex items-center">
                   <Icon
@@ -97,7 +97,7 @@
                 v-for="(university, index) in topUniversities[destination.id] ||
                 []"
                 :key="index"
-                class="flex items-center gap-4 rounded-lg border p-4 transition-all hover:bg-gray-50"
+                class="flex flex-col items-center gap-4 rounded-lg border p-4 transition-all hover:bg-gray-50 lg:flex-row"
               >
                 <div
                   class="flex h-12 w-12 items-center justify-center rounded-full bg-red-100 text-red-600"
