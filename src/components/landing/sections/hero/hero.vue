@@ -97,7 +97,7 @@
         </div>
 
         <!-- Right Column - Illustration -->
-        <div class="w-full max-w-lg">
+        <div class="w-full">
           <div class="carousel-container overflow-hidden rounded-lg">
             <div class="carousel-slides" ref="carouselRef">
               <div class="carousel-slide">
