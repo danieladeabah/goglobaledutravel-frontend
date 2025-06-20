@@ -120,7 +120,7 @@
 
             <div class="mt-6">
               <NuxtLink
-                :to="`/study-destinations/${destination.id}`"
+                :to="`/landing/study-destinations/${destination.id}`"
                 class="inline-flex w-full items-center justify-center rounded-md bg-red-600 px-4 py-2 text-center text-sm font-medium text-white hover:bg-red-700"
               >
                 Explore {{ destination.name }}
