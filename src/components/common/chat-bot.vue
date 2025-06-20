@@ -54,7 +54,7 @@
   <Transition name="fade">
     <div
       v-if="isChatbotOpen"
-      class="fixed bottom-24 right-6 z-50 flex h-96 w-80 flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out"
+      class="fixed bottom-24 right-6 z-50 flex h-96 w-80 flex-col overflow-hidden rounded-lg bg-white shadow-xl transition-all duration-300 ease-in-out"
     >
       <div class="flex items-center justify-between bg-red-500 p-4 text-white">
         <h3 class="font-medium">
