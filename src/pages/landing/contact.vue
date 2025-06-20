@@ -68,6 +68,7 @@
               </p>
               <button
                 class="mt-4 rounded-md bg-emerald-600 px-4 py-2 text-white transition-colors hover:bg-emerald-700"
+                @click="navigateTo('/landing/contact?#contact')"
               >
                 Start Chat
               </button>
@@ -76,7 +77,7 @@
         </section>
 
         <!-- Contact Form and Office Locations -->
-        <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+        <div id="contact" class="grid grid-cols-1 gap-10 lg:grid-cols-3">
           <!-- Contact Form -->
           <section class="mb-16 lg:col-span-2">
             <h2 class="mb-6 text-2xl font-bold text-gray-800">
@@ -278,7 +279,7 @@
               </p>
               <button
                 class="w-full rounded-md bg-emerald-600 px-4 py-2 text-center text-white transition-colors hover:bg-emerald-700"
-                @click="navigateTo('/consultation?type=appointment')"
+                @click="navigateTo('/landing/consultation?type=appointment')"
               >
                 Schedule Now
               </button>
@@ -334,7 +335,7 @@
             </div>
 
             <NuxtLink
-              to="/faq"
+              to="/landing/faq"
               class="inline-flex items-center rounded-md bg-teal-600 px-6 py-3 text-white transition-colors hover:bg-teal-700"
             >
               View All FAQs

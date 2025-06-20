@@ -49,21 +49,21 @@
       <!-- Bottom section with useful links instead of profile/logout -->
       <div class="mt-auto border-t border-gray-200 pt-2">
         <NuxtLink
-          to="/contact"
+          to="/landing/contact"
           class="flex items-center rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
         >
           <Icon name="heroicons:envelope" class="mr-3 h-5 w-5" />
           Contact Us
         </NuxtLink>
         <NuxtLink
-          to="/about"
+          to="/landing/about"
           class="flex items-center rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
         >
           <Icon name="heroicons:information-circle" class="mr-3 h-5 w-5" />
           About Us
         </NuxtLink>
         <NuxtLink
-          to="/faq"
+          to="/landing/faq"
           class="flex items-center rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
         >
           <Icon name="heroicons:question-mark-circle" class="mr-3 h-5 w-5" />
@@ -94,24 +94,24 @@ const navigateTo = path => {
 const navigationItems = [
   {
     name: 'Study Abroad Steps',
-    to: '/study-abroad-steps',
+    to: '/landing/study-abroad-steps',
     icon: 'heroicons:academic-cap'
   },
   {
     name: 'Study Destinations',
-    to: '/study-destinations',
+    to: '/landing/study-destinations',
     icon: 'heroicons:globe-alt'
   },
   {
     name: 'Find a Course',
-    to: '/find-course',
+    to: '/landing/find-course',
     icon: 'heroicons:magnifying-glass',
     disabled: true
   },
-  { name: 'IELTS', to: '/ielts', icon: 'heroicons:language' },
+  { name: 'IELTS', to: '/landing/ielts', icon: 'heroicons:language' },
   {
     name: 'Student Essentials',
-    to: '/student-essentials',
+    to: '/landing/student-essentials',
     icon: 'heroicons:book-open'
   }
 ]

@@ -828,14 +828,14 @@
             </p>
             <div class="flex flex-col justify-center gap-4 sm:flex-row">
               <NuxtLink
-                to="/contact"
+                to="/landing/contact"
                 class="rounded-md bg-emerald-600 px-6 py-3 text-white transition-colors hover:bg-emerald-700"
               >
                 Contact Us
               </NuxtLink>
               <button
                 class="rounded-md border border-emerald-600 px-6 py-3 text-emerald-600 transition-colors hover:bg-emerald-50"
-                @click="navigateTo('/consultation')"
+                @click="navigateTo('/landing/consultation')"
               >
                 Schedule a Consultation
               </button>

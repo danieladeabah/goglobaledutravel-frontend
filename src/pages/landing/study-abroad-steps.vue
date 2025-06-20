@@ -86,7 +86,7 @@
         </p>
         <div class="mt-6">
           <NuxtLink
-            to="/consultation?type=study-abroad-steps"
+            to="/landing/consultation?type=study-abroad-steps"
             class="inline-flex items-center rounded-md bg-white px-6 py-3 text-base font-medium text-red-600 hover:bg-gray-50"
           >
             Book a Free Consultation
@@ -139,7 +139,7 @@ const studySteps = [
     ],
     action: {
       text: 'Explore Destinations',
-      link: '/study-destinations'
+      link: '/landing/study-destinations'
     }
   },
   {
@@ -154,7 +154,7 @@ const studySteps = [
     ],
     action: {
       text: 'IELTS Preparation',
-      link: '/ielts'
+      link: '/landing/ielts'
     }
   },
   {
@@ -218,7 +218,7 @@ const studySteps = [
     ],
     action: {
       text: 'Student Essentials',
-      link: '/student-essentials'
+      link: '/landing/student-essentials'
     }
   },
   {
