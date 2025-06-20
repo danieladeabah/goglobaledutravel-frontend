@@ -108,12 +108,12 @@
       </div>
 
       <div class="flex-1 overflow-y-auto p-4" ref="chatMessagesRef">
-        <!-- Suggested prompts moved to top -->
+        <!-- Original prompts at the top -->
         <div class="mb-4 border-b border-gray-200 pb-4">
-          <p class="mb-2 text-sm text-gray-500">Suggested questions:</p>
+          <p class="mb-2 text-sm text-gray-500">Popular questions:</p>
           <div class="space-y-2">
             <button
-              v-for="(prompt, idx) in suggestedPrompts"
+              v-for="(prompt, idx) in baseSuggestedPrompts.slice(0, 4)"
               :key="idx"
               @click="usePrompt(prompt)"
               class="block w-full rounded-md border border-gray-300 p-2 text-left text-sm transition-colors hover:border-red-300 hover:bg-red-50"
@@ -143,6 +143,24 @@
               v-html="renderMarkdown(message.text)"
               class="markdown-content"
             ></div>
+          </div>
+        </div>
+
+        <!-- Context-aware suggested prompts at the bottom -->
+        <div
+          v-if="chatMessages.length > 0"
+          class="mb-4 border-t border-gray-200 pt-4"
+        >
+          <p class="mb-2 text-sm text-gray-500">You might also want to ask:</p>
+          <div class="space-y-2">
+            <button
+              v-for="(prompt, idx) in suggestedPrompts"
+              :key="idx"
+              @click="usePrompt(prompt)"
+              class="block w-full rounded-md border border-gray-300 p-2 text-left text-sm transition-colors hover:border-red-300 hover:bg-red-50"
+            >
+              {{ prompt }}
+            </button>
           </div>
         </div>
 
