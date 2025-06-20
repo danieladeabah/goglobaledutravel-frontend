@@ -98,7 +98,16 @@
 
         <!-- Right Column - Illustration -->
         <div class="w-full max-w-lg">
-          <Student class="hidden md:block" />
+          <div class="carousel-container overflow-hidden rounded-lg">
+            <div class="carousel-slides" ref="carouselRef">
+              <div class="carousel-slide">
+                <StudentIcon class="h-full w-full" />
+              </div>
+              <div class="carousel-slide">
+                <TeacherIcon class="h-full w-full" />
+              </div>
+            </div>
+          </div>
         </div>
         <LandingSectionsHeroInsights />
       </div>
@@ -108,7 +117,52 @@
 
 <script setup>
 import Arrow from '@/assets/icons/arrow-icon.vue'
-import Student from '@/assets/icons/student-icon.vue'
+import StudentIcon from '@/assets/icons/student-icon.vue'
+import TeacherIcon from '~/assets/icons/teacher-icon.vue'
+
+// Carousel functionality
+const currentSlide = ref(0)
+const carouselRef = ref(null)
+let autoplayInterval = null
+
+// Update carousel position
+const updateCarousel = () => {
+  if (carouselRef.value) {
+    const slideWidth = carouselRef.value.clientWidth
+    carouselRef.value.style.transform = `translateX(-${currentSlide.value * slideWidth}px)`
+  }
+}
+
+// Next slide function
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % 2
+  updateCarousel()
+}
+
+// Start autoplay
+const startAutoplay = () => {
+  stopAutoplay() // Clear any existing interval
+  autoplayInterval = setInterval(nextSlide, 5000)
+}
+
+// Stop autoplay
+const stopAutoplay = () => {
+  if (autoplayInterval) {
+    clearInterval(autoplayInterval)
+  }
+}
+
+// Lifecycle hooks
+onMounted(() => {
+  updateCarousel()
+  startAutoplay()
+  window.addEventListener('resize', updateCarousel)
+})
+
+onBeforeUnmount(() => {
+  stopAutoplay()
+  window.removeEventListener('resize', updateCarousel)
+})
 </script>
 
 <style scoped>
@@ -194,5 +248,33 @@ import Student from '@/assets/icons/student-icon.vue'
 
 .animate-button-breath {
   animation: button-breath 3s ease-in-out infinite;
+}
+
+/* Carousel styles */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+
+.carousel-slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-dot {
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dot:hover {
+  background-color: #e5e7eb;
 }
 </style>
