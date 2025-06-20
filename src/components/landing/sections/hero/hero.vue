@@ -63,7 +63,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="container relative z-10 mx-auto px-4">
+    <div class="container relative mx-auto px-4">
       <div
         class="grid grid-cols-1 gap-0 md:grid-cols-2 md:items-center md:gap-8 lg:gap-4"
       >
