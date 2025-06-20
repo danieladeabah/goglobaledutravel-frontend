@@ -15,7 +15,7 @@
       <!-- Header Section -->
       <div class="mb-10 text-center">
         <h1 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-          Book Your Premium Consultation
+          Book Your Consultation
         </h1>
         <p class="mx-auto mt-4 max-w-2xl text-xl text-gray-500">
           Let our experts help you chart your path to academic success abroad
