@@ -97,7 +97,7 @@
                 v-for="(university, index) in topUniversities[destination.id] ||
                 []"
                 :key="index"
-                class="flex flex-col items-center gap-4 rounded-lg border p-4 transition-all hover:bg-gray-50 lg:flex-row"
+                class="flex flex-col items-center gap-4 rounded-lg border p-4 transition-all hover:bg-gray-50 md:flex-row"
               >
                 <div
                   class="flex h-12 w-12 items-center justify-center rounded-full bg-red-100 text-red-600"
