@@ -108,6 +108,21 @@
       </div>
 
       <div class="flex-1 overflow-y-auto p-4" ref="chatMessagesRef">
+        <!-- Suggested prompts moved to top -->
+        <div class="mb-4 border-b border-gray-200 pb-4">
+          <p class="mb-2 text-sm text-gray-500">Suggested questions:</p>
+          <div class="space-y-2">
+            <button
+              v-for="(prompt, idx) in suggestedPrompts"
+              :key="idx"
+              @click="usePrompt(prompt)"
+              class="block w-full rounded-md border border-gray-300 p-2 text-left text-sm transition-colors hover:border-red-300 hover:bg-red-50"
+            >
+              {{ prompt }}
+            </button>
+          </div>
+        </div>
+
         <div class="mb-4">
           <div class="inline-block rounded-lg bg-gray-100 p-3">
             Hello! How can I help you with your study abroad plans today?
@@ -138,21 +153,6 @@
               <span></span>
               <span></span>
             </div>
-          </div>
-        </div>
-
-        <!-- Suggested prompts - always visible -->
-        <div class="mt-6 border-t border-gray-200 pt-4">
-          <p class="mb-2 text-sm text-gray-500">Suggested questions:</p>
-          <div class="space-y-2">
-            <button
-              v-for="(prompt, idx) in suggestedPrompts"
-              :key="idx"
-              @click="usePrompt(prompt)"
-              class="block w-full rounded-md border border-gray-300 p-2 text-left text-sm transition-colors hover:border-red-300 hover:bg-red-50"
-            >
-              {{ prompt }}
-            </button>
           </div>
         </div>
       </div>
@@ -241,13 +241,91 @@ const systemPrompt =
   'You are a helpful assistant for GoGlobalEduTravel, a study abroad agency. Provide useful and accurate information about studying abroad, countries, universities, visa processes, and other related queries. Keep responses concise, friendly, and focused on helping students with their education travel needs.'
 
 // Suggested prompts that users can click
-const suggestedPrompts = [
+const baseSuggestedPrompts = [
   'What study programs are available in the UK?',
   'How do I apply for a student visa in Canada?',
   'What are the best universities for Computer Science?',
   'What scholarships are available for international students?',
-  'How much does it cost to study in Australia?'
+  'How much does it cost to study in Australia?',
+  'Tell me about studying in Germany',
+  'What are the language requirements for studying abroad?',
+  'How can I find accommodation in foreign countries?',
+  'What are the top medical schools in Europe?',
+  'How do I prepare for studying abroad?'
 ]
+
+// Function to generate context-aware suggestions
+const generateSuggestions = () => {
+  // If there are no messages yet, return base prompts
+  if (chatMessages.value.length === 0) {
+    return getRandomSuggestions(baseSuggestedPrompts, 4)
+  }
+
+  const lastAIMessage = [...chatMessages.value]
+    .reverse()
+    .find(msg => !msg.isUser)
+
+  // If topic is about UK
+  if (
+    (lastAIMessage && lastAIMessage.text.toLowerCase().includes('uk')) ||
+    (lastAIMessage &&
+      lastAIMessage.text.toLowerCase().includes('united kingdom'))
+  ) {
+    return getRandomSuggestions(
+      [
+        'What are the top universities in London?',
+        'How much does accommodation cost in the UK?',
+        'What scholarships are available for UK universities?',
+        'Do I need IELTS for UK student visa?',
+        'What is the UK Graduate Route visa?'
+      ],
+      4
+    )
+  }
+
+  // If topic is about visas
+  if (lastAIMessage && lastAIMessage.text.toLowerCase().includes('visa')) {
+    return getRandomSuggestions(
+      [
+        'What documents do I need for a student visa?',
+        'How long does visa processing take?',
+        'Can I work while studying with a student visa?',
+        'What are post-study work visa options?',
+        'How do I extend my student visa?'
+      ],
+      4
+    )
+  }
+
+  // If topic is about scholarships
+  if (
+    lastAIMessage &&
+    lastAIMessage.text.toLowerCase().includes('scholarship')
+  ) {
+    return getRandomSuggestions(
+      [
+        'What are merit-based scholarships?',
+        'Which countries offer full scholarships?',
+        'How do I write a good scholarship essay?',
+        'Are there scholarships for specific fields of study?',
+        'When should I apply for scholarships?'
+      ],
+      4
+    )
+  }
+
+  // Default: return random base suggestions
+  return getRandomSuggestions(baseSuggestedPrompts, 4)
+}
+
+// Helper to get random suggestions
+const getRandomSuggestions = (array, count) => {
+  const shuffled = [...array].sort(() => 0.5 - Math.random())
+  return shuffled.slice(0, count)
+}
+
+// Dynamic suggestions that update based on conversation
+const suggestedPrompts = ref(getRandomSuggestions(baseSuggestedPrompts, 4))
 
 const props = defineProps({
   breathing: {
@@ -413,6 +491,9 @@ const sendMessage = async () => {
         text: aiResponse,
         isUser: false
       })
+
+      // Update suggested prompts based on conversation
+      suggestedPrompts.value = generateSuggestions()
     } catch (error) {
       console.error('Error in sendMessage:', error)
 
