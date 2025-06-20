@@ -54,7 +54,7 @@
   <Transition name="fade">
     <div
       v-if="isChatbotOpen"
-      class="fixed bottom-24 right-6 z-50 flex h-96 w-80 flex-col overflow-hidden rounded-lg bg-white shadow-xl transition-all duration-300 ease-in-out"
+      class="fixed inset-0 z-50 flex h-full w-full flex-col overflow-hidden rounded-none bg-white shadow-xl transition-all duration-300 ease-in-out sm:inset-auto sm:bottom-24 sm:right-6 sm:h-96 sm:w-80 lg:h-[500px] lg:w-[400px]"
     >
       <div class="flex items-center justify-between bg-red-500 p-4 text-white">
         <h3 class="font-medium">
@@ -122,13 +122,22 @@
               'inline-block max-w-[80%] rounded-lg p-3'
             ]"
           >
-            {{ message.text }}
+            <div v-if="message.isUser">{{ message.text }}</div>
+            <div
+              v-else
+              v-html="renderMarkdown(message.text)"
+              class="markdown-content"
+            ></div>
           </div>
         </div>
 
         <div v-if="isLoading" class="mb-4">
           <div class="inline-block rounded-lg bg-gray-100 p-3">
-            <span class="loading-dots">Thinking</span>
+            <div class="typing-indicator">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
 
@@ -216,8 +225,7 @@
 </template>
 
 <script setup>
-import { ref, watch, onMounted, nextTick } from 'vue'
-import { useRuntimeConfig } from '#app'
+import { marked } from 'marked'
 
 const isChatbotOpen = ref(false)
 const chatMessages = ref([])
@@ -447,6 +455,16 @@ watch(
   () => chatMessages.value.length,
   () => scrollToBottom()
 )
+
+// Function to render markdown in messages
+const renderMarkdown = text => {
+  try {
+    return marked(text, { breaks: true })
+  } catch (error) {
+    console.error('Error rendering markdown:', error)
+    return text
+  }
+}
 </script>
 
 <style scoped>
@@ -507,28 +525,79 @@ watch(
   transform: translateY(10px);
 }
 
-/* Loading animation */
-.loading-dots:after {
-  content: '...';
-  animation: dots 1.5s infinite;
-  display: inline-block;
-  width: 20px;
-  text-align: left;
+/* Typing indicator animation */
+.typing-indicator {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
 }
 
-@keyframes dots {
+.typing-indicator span {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #666;
+  border-radius: 50%;
+  display: inline-block;
+  animation: typing 1.5s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
   0%,
-  20% {
-    content: '.';
-  }
-
-  40% {
-    content: '..';
-  }
-
-  60%,
   100% {
-    content: '...';
+    transform: translateY(0);
   }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Markdown content styling */
+.markdown-content {
+  line-height: 1.5;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 1.5rem;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+}
+
+.markdown-content a {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+.markdown-content pre,
+.markdown-content code {
+  background-color: #f0f0f0;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9em;
 }
 </style>
