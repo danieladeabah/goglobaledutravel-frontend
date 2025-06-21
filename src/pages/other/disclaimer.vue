@@ -8,7 +8,8 @@
         <div class="container mx-auto px-4">
           <h1 class="mb-4 text-4xl font-bold">Disclaimer</h1>
           <p class="max-w-3xl text-xl">
-            Important information about using GoGlobalEduTravel services.
+            Important information about using GoGlobal Education &
+            Travel Consult services.
           </p>
         </div>
       </div>
@@ -36,9 +37,9 @@
               </h3>
               <p>
                 This website may contain links to external websites that are not
-                provided or maintained by or in any way affiliated with
-                GoGlobalEduTravel. Please note that we do not guarantee the
-                accuracy, relevance, timeliness, or completeness of any
+                provided or maintained by or in any way affiliated with GoGlobal
+                Education & Travel Consult. Please note that we do not guarantee
+                the accuracy, relevance, timeliness, or completeness of any
                 information on these external websites.
               </p>
 
@@ -57,10 +58,11 @@
                 Limitation of Liability
               </h3>
               <p>
-                GoGlobalEduTravel shall not be liable for any losses, injuries,
-                or damages from the display or use of this information. We will
-                not be liable to you in respect of any losses arising out of any
-                event or events beyond our reasonable control.
+                GoGlobal Education & Travel Consult shall not be liable for any
+                losses, injuries, or damages from the display or use of this
+                information. We will not be liable to you in respect of any
+                losses arising out of any event or events beyond our reasonable
+                control.
               </p>
 
               <h3 class="mt-8 text-xl font-semibold text-gray-800">Updates</h3>
@@ -99,12 +101,12 @@
 
 <script setup>
 useHead({
-  title: 'Disclaimer | GoGlobalEduTravel',
+  title: 'Disclaimer | GoGlobal Education & Travel Consult',
   meta: [
     {
       name: 'description',
       content:
-        'Read the disclaimer for GoGlobalEduTravel including limitations of liability, accuracy of information, and external links policy.'
+        'Read the disclaimer for GoGlobal Education & Travel Consult including limitations of liability, accuracy of information, and external links policy.'
     }
   ]
 })

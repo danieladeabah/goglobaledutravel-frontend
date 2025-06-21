@@ -1,5 +1,6 @@
 export const meta = {
-  title: 'Study Abroad and Overseas Education | GoGlobalEduTravel',
+  title:
+    'Study Abroad and Overseas Education | GoGlobal Education & Travel Consult',
   htmlAttrs: {
     lang: 'en'
   },

@@ -22,11 +22,11 @@
             <div>
               <h2 class="mb-6 text-2xl font-bold text-gray-800">Our Story</h2>
               <p class="mb-4 text-gray-600">
-                GoGlobalEduTravel was founded in 2025 with a simple mission: to
-                make international education accessible to students from Africa.
-                What began as a small consulting service has grown into a
-                comprehensive education agency helping thousands of students
-                achieve their dreams of studying abroad.
+                GoGlobal Education & Travel Consult was founded in 2025 with a
+                simple mission: to make international education accessible to
+                students from Africa. What began as a small consulting service
+                has grown into a comprehensive education agency helping
+                thousands of students achieve their dreams of studying abroad.
               </p>
               <p class="mb-4 text-gray-600">
                 Our founder, having experienced the challenges of pursuing
@@ -36,9 +36,9 @@
                 reach while maintaining our commitment to personalized support.
               </p>
               <p class="text-gray-600">
-                Today, GoGlobalEduTravel has partnerships with over 200
-                institutions across 15 countries and has successfully placed
-                more than 5,000 students in international programs.
+                Today, GoGlobal Education & Travel Consult has partnerships with
+                over 200 institutions across 15 countries and has successfully
+                placed more than 5,000 students in international programs.
               </p>
             </div>
             <div
@@ -46,7 +46,7 @@
             >
               <img
                 src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
-                alt="GoGlobalEduTravel Team"
+                alt="GoGlobal Education & Travel Consult Team"
                 class="h-full w-full object-cover"
               />
             </div>
@@ -86,12 +86,12 @@
 
 <script setup>
 useHead({
-  title: 'About Us | GoGlobalEduTravel',
+  title: 'About Us | GoGlobal Education & Travel Consult',
   meta: [
     {
       name: 'description',
       content:
-        'Learn about GoGlobalEduTravel, our mission to make international education accessible, our experienced team, and our history of helping students achieve their academic dreams abroad.'
+        'Learn about GoGlobal Education & Travel Consult, our mission to make international education accessible, our experienced team, and our history of helping students achieve their academic dreams abroad.'
     }
   ]
 })
