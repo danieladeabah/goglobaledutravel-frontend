@@ -104,7 +104,7 @@
                 >
                   <span class="font-bold">{{ index + 1 }}</span>
                 </div>
-                <div>
+                <div class="text-center lg:text-left">
                   <h3 class="font-medium text-gray-900">
                     {{ university.name }}
                   </h3>
