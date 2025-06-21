@@ -8,7 +8,7 @@
         <div class="container mx-auto px-4">
           <h1 class="mb-4 text-4xl font-bold">Terms & Conditions</h1>
           <p class="max-w-3xl text-xl">
-            Guidelines for using GoGlobalEduTravel services.
+            Guidelines for using GoGlobal Education & Travel Consult services.
           </p>
         </div>
       </div>
@@ -24,10 +24,10 @@
             <div class="space-y-6 text-gray-600">
               <p>
                 These Terms and Conditions ("Terms") govern your use of the
-                GoGlobalEduTravel website and services. By accessing or using
-                our services, you agree to be bound by these Terms. If you
-                disagree with any part of the Terms, then you may not access the
-                service.
+                GoGlobal Education & Travel Consult website and services. By
+                accessing or using our services, you agree to be bound by these
+                Terms. If you disagree with any part of the Terms, then you may
+                not access the service.
               </p>
 
               <h3 class="mt-8 text-xl font-semibold text-gray-800">
@@ -71,9 +71,9 @@
               <p>
                 The service and its original content, features, and
                 functionality are and will remain the exclusive property of
-                GoGlobalEduTravel. Our service may contain content provided by
-                third parties that is subject to copyright, trademark, and other
-                intellectual property rights.
+                GoGlobal Education & Travel Consult. Our service may contain
+                content provided by third parties that is subject to copyright,
+                trademark, and other intellectual property rights.
               </p>
 
               <h3 class="mt-8 text-xl font-semibold text-gray-800">
@@ -91,12 +91,12 @@
                 Limitation of Liability
               </h3>
               <p>
-                In no event shall GoGlobalEduTravel, nor its directors,
-                employees, partners, agents, suppliers, or affiliates, be liable
-                for any indirect, incidental, special, consequential or punitive
-                damages, including loss of profits, data, or goodwill, resulting
-                from your access to or use of or inability to access or use the
-                service.
+                In no event shall GoGlobal Education & Travel Consult, nor its
+                directors, employees, partners, agents, suppliers, or
+                affiliates, be liable for any indirect, incidental, special,
+                consequential or punitive damages, including loss of profits,
+                data, or goodwill, resulting from your access to or use of or
+                inability to access or use the service.
               </p>
 
               <h3 class="mt-8 text-xl font-semibold text-gray-800">
@@ -115,10 +115,10 @@
               </h3>
               <p>
                 These Terms shall be governed by and defined following the laws
-                of the jurisdiction in which our company is registered.
-                GoGlobalEduTravel and yourself irrevocably consent to the
-                exclusive jurisdiction of the courts in that jurisdiction for
-                any disputes arising from these Terms.
+                of the jurisdiction in which our company is registered. GoGlobal
+                Education & Travel Consult and yourself irrevocably consent to
+                the exclusive jurisdiction of the courts in that jurisdiction
+                for any disputes arising from these Terms.
               </p>
             </div>
           </div>
@@ -151,12 +151,12 @@
 
 <script setup>
 useHead({
-  title: 'Terms & Conditions | GoGlobalEduTravel',
+  title: 'Terms & Conditions | GoGlobal Education & Travel Consult',
   meta: [
     {
       name: 'description',
       content:
-        'Read the terms and conditions governing the use of GoGlobalEduTravel services, website, and platforms for international education consulting.'
+        'Read the terms and conditions governing the use of GoGlobal Education & Travel Consult services, website, and platforms for international education consulting.'
     }
   ]
 })

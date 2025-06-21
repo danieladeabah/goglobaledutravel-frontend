@@ -187,7 +187,8 @@
                       <a href="#" class="text-emerald-600 hover:underline"
                         >privacy policy</a
                       >
-                      and consent to being contacted by GoGlobalEduTravel.
+                      and consent to being contacted by GoGlobal Education &
+                      Travel Consult.
                     </label>
                   </div>
                 </div>
@@ -361,12 +362,12 @@
 
 <script setup>
 useHead({
-  title: 'Contact Us | GoGlobalEduTravel',
+  title: 'Contact Us | GoGlobal Education & Travel Consult',
   meta: [
     {
       name: 'description',
       content:
-        'Get in touch with GoGlobalEduTravel for any inquiries about studying abroad, visa assistance, university applications, or other educational services.'
+        'Get in touch with GoGlobal Education & Travel Consult for any inquiries about studying abroad, visa assistance, university applications, or other educational services.'
     }
   ]
 })

@@ -435,7 +435,7 @@
 
 <script setup>
 useHead({
-  title: 'Student Essentials | GoGlobalEduTravel',
+  title: 'Student Essentials | GoGlobal Education & Travel Consult',
   meta: [
     {
       name: 'description',

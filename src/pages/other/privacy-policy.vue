@@ -8,7 +8,8 @@
         <div class="container mx-auto px-4">
           <h1 class="mb-4 text-4xl font-bold">Privacy Policy</h1>
           <p class="max-w-3xl text-xl">
-            How GoGlobalEduTravel collects, uses, and protects your data.
+            How GoGlobal Education & Travel Consult collects, uses, and protects
+            your data.
           </p>
         </div>
       </div>
@@ -23,12 +24,12 @@
 
             <div class="space-y-6 text-gray-600">
               <p>
-                GoGlobalEduTravel is committed to protecting your privacy. This
-                Privacy Policy explains how we collect, use, disclose, and
-                safeguard your information when you visit our website and use
-                our services. Please read this privacy policy carefully. If you
-                do not agree with the terms of this privacy policy, please do
-                not access the site.
+                GoGlobal Education & Travel Consult is committed to protecting
+                your privacy. This Privacy Policy explains how we collect, use,
+                disclose, and safeguard your information when you visit our
+                website and use our services. Please read this privacy policy
+                carefully. If you do not agree with the terms of this privacy
+                policy, please do not access the site.
               </p>
 
               <h3 class="mt-8 text-xl font-semibold text-gray-800">
@@ -141,12 +142,12 @@
 
 <script setup>
 useHead({
-  title: 'Privacy Policy | GoGlobalEduTravel',
+  title: 'Privacy Policy | GoGlobal Education & Travel Consult',
   meta: [
     {
       name: 'description',
       content:
-        'GoGlobalEduTravel privacy policy detailing how we collect, use, and protect your personal information when using our education services.'
+        'GoGlobal Education & Travel Consult privacy policy detailing how we collect, use, and protect your personal information when using our education services.'
     }
   ]
 })

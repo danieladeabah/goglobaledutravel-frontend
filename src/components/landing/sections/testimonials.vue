@@ -109,14 +109,14 @@ const testimonials = ref([
   },
   {
     content:
-      'The process was very simple and easy to go through. Before GoGlobalEduTravel I thought this gonna burn a hole in my pocket but I am very happy the way it turned out.',
+      'The process was very simple and easy to go through. Before GoGlobal Education & Travel Consult I thought this gonna burn a hole in my pocket but I am very happy the way it turned out.',
     name: 'Chidi Okonkwo',
     title: 'Bachelors, University of New York',
     image: profile2
   },
   {
     content:
-      'I am currently employed at one the biggest companies in the world. All thanks to GoGlobalEduTravel for opening door to USA for me and I love every step I ever took.',
+      'I am currently employed at one the biggest companies in the world. All thanks to GoGlobal Education & Travel Consult for opening door to USA for me and I love every step I ever took.',
     name: 'Amara Nwosu',
     title: 'Visual Designer, Cuatro, USA',
     image: profile3

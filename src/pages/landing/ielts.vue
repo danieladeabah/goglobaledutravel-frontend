@@ -255,12 +255,12 @@
 
 <script setup>
 useHead({
-  title: 'IELTS Preparation & Testing | GoGlobalEduTravel',
+  title: 'IELTS Preparation & Testing | GoGlobal Education & Travel Consult',
   meta: [
     {
       name: 'description',
       content:
-        'Learn about IELTS testing, preparation resources, and how GoGlobalEduTravel can help you achieve the score you need for academic success abroad.'
+        'Learn about IELTS testing, preparation resources, and how GoGlobal Education & Travel Consult can help you achieve the score you need for academic success abroad.'
     }
   ]
 })
