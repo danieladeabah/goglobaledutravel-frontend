@@ -27,7 +27,7 @@
       <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
         <!-- Nurses Program -->
         <div
-          class="overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
+          class="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
         >
           <div class="relative h-48 w-full overflow-hidden">
             <img
@@ -42,7 +42,7 @@
               <h3 class="text-xl font-bold text-white">Nurses Work in US</h3>
             </div>
           </div>
-          <div class="p-6">
+          <div class="flex flex-grow flex-col p-6">
             <h2 class="mb-3 text-xl font-bold text-gray-900">
               Work as a Nurse in the United States
             </h2>
@@ -75,19 +75,21 @@
               <li>Relocation support</li>
             </ul>
 
-            <NuxtLink
-              to="/landing/consultation?type=nurse-program"
-              class="inline-flex w-full items-center justify-center rounded-md bg-red-600 px-4 py-2 text-center text-sm font-medium text-white hover:bg-red-700"
-            >
-              Apply for Nursing Program
-              <Icon name="heroicons:arrow-right" class="ml-2 h-4 w-4" />
-            </NuxtLink>
+            <div class="mt-auto pt-6">
+              <NuxtLink
+                to="/landing/consultation?type=nurse-program"
+                class="inline-flex w-full items-center justify-center rounded-md bg-red-600 px-4 py-2 text-center text-sm font-medium text-white hover:bg-red-700"
+              >
+                Apply for Nursing Program
+                <Icon name="heroicons:arrow-right" class="ml-2 h-4 w-4" />
+              </NuxtLink>
+            </div>
           </div>
         </div>
 
         <!-- Accountants Program -->
         <div
-          class="overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
+          class="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
         >
           <div class="relative h-48 w-full overflow-hidden">
             <img
@@ -104,7 +106,7 @@
               </h3>
             </div>
           </div>
-          <div class="p-6">
+          <div class="flex flex-grow flex-col p-6">
             <h2 class="mb-3 text-xl font-bold text-gray-900">
               US Accounting Careers
             </h2>
@@ -136,19 +138,21 @@
               <li>Relocation assistance</li>
             </ul>
 
-            <NuxtLink
-              to="/landing/consultation?type=accountant-program"
-              class="inline-flex w-full items-center justify-center rounded-md bg-red-600 px-4 py-2 text-center text-sm font-medium text-white hover:bg-red-700"
-            >
-              Apply for Accounting Program
-              <Icon name="heroicons:arrow-right" class="ml-2 h-4 w-4" />
-            </NuxtLink>
+            <div class="mt-auto pt-6">
+              <NuxtLink
+                to="/landing/consultation?type=accountant-program"
+                class="inline-flex w-full items-center justify-center rounded-md bg-red-600 px-4 py-2 text-center text-sm font-medium text-white hover:bg-red-700"
+              >
+                Apply for Accounting Program
+                <Icon name="heroicons:arrow-right" class="ml-2 h-4 w-4" />
+              </NuxtLink>
+            </div>
           </div>
         </div>
 
         <!-- Teachers Program -->
         <div
-          class="overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
+          class="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
         >
           <div class="relative h-48 w-full overflow-hidden">
             <img
@@ -165,7 +169,7 @@
               </h3>
             </div>
           </div>
-          <div class="p-6">
+          <div class="flex flex-grow flex-col p-6">
             <h2 class="mb-3 text-xl font-bold text-gray-900">
               Teaching Opportunities in Ireland
             </h2>
@@ -201,13 +205,15 @@
               <li>Ongoing professional development</li>
             </ul>
 
-            <NuxtLink
-              to="/landing/consultation?type=teacher-program"
-              class="inline-flex w-full items-center justify-center rounded-md bg-red-600 px-4 py-2 text-center text-sm font-medium text-white hover:bg-red-700"
-            >
-              Apply for Teaching Program
-              <Icon name="heroicons:arrow-right" class="ml-2 h-4 w-4" />
-            </NuxtLink>
+            <div class="mt-auto pt-6">
+              <NuxtLink
+                to="/landing/consultation?type=teacher-program"
+                class="inline-flex w-full items-center justify-center rounded-md bg-red-600 px-4 py-2 text-center text-sm font-medium text-white hover:bg-red-700"
+              >
+                Apply for Teaching Program
+                <Icon name="heroicons:arrow-right" class="ml-2 h-4 w-4" />
+              </NuxtLink>
+            </div>
           </div>
         </div>
       </div>
