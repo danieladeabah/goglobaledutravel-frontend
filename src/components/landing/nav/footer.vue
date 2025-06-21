@@ -7,14 +7,16 @@
       <div
         class="grid grid-cols-3 gap-0 border-t border-gray-200 pt-4 md:gap-3 md:border-0 md:pt-0"
       >
-        <nuxt-link to="/disclaimer" class="text-gray-500 hover:underline"
+        <nuxt-link to="/other/disclaimer" class="text-gray-500 hover:underline"
           >Disclaimer</nuxt-link
         >
-        <nuxt-link to="/privacy-policy" class="text-gray-500 hover:underline"
+        <nuxt-link
+          to="/other/privacy-policy"
+          class="text-gray-500 hover:underline"
           >Privacy Policy</nuxt-link
         >
         <nuxt-link
-          to="/terms-conditions"
+          to="/other/terms-conditions"
           title="Terms & Conditions"
           class="text-gray-500 hover:underline"
           >Terms & C..</nuxt-link
@@ -23,10 +25,6 @@
     </div>
 
     <!-- Chatbot -->
-    <ChatBot :breathing="true" />
+    <CommonChatBot :breathing="true" />
   </footer>
 </template>
-
-<script setup>
-import ChatBot from '~/components/common/chat-bot.vue'
-</script>
