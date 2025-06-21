@@ -5,7 +5,7 @@
       <div class="mb-6">
         <button
           @click="goBack"
-          class="inline-flex items-center rounded-full border px-4 py-1 text-red-600 transition-all duration-200 ease-in-out hover:bg-gray-100 hover:text-red-700 hover:shadow-sm"
+          class="inline-flex items-center rounded-full bg-gray-100 px-4 py-1 text-red-600 transition-all duration-200 ease-in-out hover:bg-gray-200 hover:text-red-700 hover:shadow-sm"
         >
           <ArrowLeftIcon class="mr-2 h-5 w-5" />
           <span>Back</span>
