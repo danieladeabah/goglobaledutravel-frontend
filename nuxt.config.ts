@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       GOOGLE_GEMINI_API_KEY: process.env.GOOGLE_GEMINI_API_KEY ?? '',
-      googleMapClientId: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''
+      googleMapClientId: process.env.GOOGLE_MAPS_API_KEY ?? ''
     }
   }
 })
