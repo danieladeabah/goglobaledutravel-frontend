@@ -29,9 +29,11 @@
             </p>
           </div>
           <div class="mt-auto pt-4">
-            <a href="#" class="font-medium text-red-600 hover:underline">{{
-              program.linkText
-            }}</a>
+            <NuxtLink
+              :to="'/landing/consultation?type=' + program.title"
+              class="font-medium text-red-600 hover:underline"
+              >{{ program.linkText }}</NuxtLink
+            >
           </div>
         </div>
       </div>
