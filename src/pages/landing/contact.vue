@@ -291,12 +291,23 @@
         <section class="mb-16">
           <h2 class="mb-6 text-2xl font-bold text-gray-800">Find Us</h2>
           <div
-            class="relative h-[400px] w-full overflow-hidden rounded-lg bg-gray-200"
+            class="relative h-[400px] w-full overflow-hidden rounded-lg border border-gray-200 shadow-md"
           >
-            <p class="flex h-full items-center justify-center text-gray-600">
-              <!-- Map would be integrated here -->
-              Interactive map will be displayed here
-            </p>
+            <div
+              v-if="!mapApiKey"
+              class="flex h-full w-full items-center justify-center bg-gray-100"
+            >
+              <p class="text-center text-gray-600">Loading map...</p>
+            </div>
+            <UiMap
+              v-else
+              :api-key="mapApiKey"
+              :center="{ lat: 5.6037, lng: -0.187 }"
+              :zoom="10"
+              :markers="mapMarkers"
+              map-id="goglobaledutravel-map"
+              class="h-full w-full"
+            />
           </div>
         </section>
 
@@ -358,5 +369,31 @@ useHead({
         'Get in touch with GoGlobalEduTravel for any inquiries about studying abroad, visa assistance, university applications, or other educational services.'
     }
   ]
+})
+
+// Initialize mapApiKey ref
+const mapApiKey = ref('')
+
+// Map markers for our office locations
+const mapMarkers = [
+  {
+    position: { lat: 5.6037, lng: -0.187 },
+    title: 'Accra Office',
+    content: '123 Independence Avenue, Accra Central, Ghana'
+  },
+  {
+    position: { lat: 6.6885, lng: -1.6244 },
+    title: 'Kumasi Office',
+    content: '456 Prempeh Street, Adum, Kumasi, Ghana'
+  }
+]
+
+// Load API key from runtime config if available
+onMounted(() => {
+  const config = useRuntimeConfig()
+  const apiKey = config.public.googleMapClientId
+  if (apiKey) {
+    mapApiKey.value = apiKey
+  }
 })
 </script>
