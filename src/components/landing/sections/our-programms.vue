@@ -10,7 +10,7 @@
       </p>
 
       <div
-        class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
+        class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4"
       >
         <div
           v-for="(program, index) in programs"
@@ -45,6 +45,9 @@ import MastersIcon from '@/assets/icons/masters-icon.vue'
 import MBAIcon from '@/assets/icons/cup-icon.vue'
 import PhDIcon from '@/assets/icons/phd-icon.vue'
 import ManagementIcon from '@/assets/icons/loan-icon.vue'
+import NurseIcon from '@/assets/icons/counselling-icon.vue'
+import AccountantIcon from '@/assets/icons/visa-icon.vue'
+import TeacherIcon from '@/assets/icons/institute-icon.vue'
 
 const programs = [
   {
@@ -81,6 +84,27 @@ const programs = [
     description:
       'Our specialized advisors will help you gain admission into top Management programs worldwide.',
     linkText: 'Explore Management Programs'
+  },
+  {
+    icon: NurseIcon,
+    title: 'Nurses Work in US',
+    description:
+      'Qualified nurses can access exclusive opportunities to work in the US healthcare system with our comprehensive placement assistance and visa support.',
+    linkText: 'Nursing Opportunities'
+  },
+  {
+    icon: AccountantIcon,
+    title: 'Accountants Work in US',
+    description:
+      'We help accounting professionals navigate the certification requirements and visa processes needed to establish a successful career in the US financial sector.',
+    linkText: 'Accounting Careers'
+  },
+  {
+    icon: TeacherIcon,
+    title: 'Teachers Needed in Ireland',
+    description:
+      'Connect with teaching positions in Ireland education system. We provide guidance on qualification recognition, job placement, and relocation assistance.',
+    linkText: 'Teaching Positions'
   }
 ]
 </script>

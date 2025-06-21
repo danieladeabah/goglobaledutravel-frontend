@@ -59,6 +59,309 @@
 
         <!-- FAQs -->
         <section class="mx-auto max-w-4xl">
+          <!-- Professional Work -->
+          <div
+            v-if="
+              selectedCategory === 'all' ||
+              selectedCategory === 'professional-work'
+            "
+            class="mb-12"
+          >
+            <h2 class="mb-6 text-2xl font-bold text-gray-800">
+              Professional Work
+            </h2>
+
+            <div class="space-y-4">
+              <!-- Question: Nursing in US -->
+              <div
+                v-if="
+                  isQuestionVisible(
+                    'nursing us program requirements qualifications'
+                  )
+                "
+                class="rounded-lg border border-gray-200"
+              >
+                <button
+                  class="flex w-full items-center justify-between p-4 text-left"
+                  @click="toggle('pw1')"
+                >
+                  <span class="font-medium"
+                    >What qualifications do I need for the Nursing Work program
+                    in the US?</span
+                  >
+                  <Icon
+                    :name="
+                      expandedQuestion === 'pw1'
+                        ? 'heroicons:chevron-up'
+                        : 'heroicons:chevron-down'
+                    "
+                    class="h-5 w-5 text-gray-500"
+                  />
+                </button>
+                <div
+                  v-show="expandedQuestion === 'pw1'"
+                  class="border-t border-gray-200 p-4 text-gray-600"
+                >
+                  <p>
+                    To qualify for the US Nursing Work program, you must have:
+                  </p>
+                  <ul class="mt-2 list-disc space-y-1 pl-5">
+                    <li>A nursing degree from an accredited institution</li>
+                    <li>Minimum 2 years clinical experience</li>
+                    <li>
+                      NCLEX-RN certification (we provide preparation assistance)
+                    </li>
+                    <li>
+                      English language proficiency (IELTS score of at least 6.5
+                      or TOEFL equivalent)
+                    </li>
+                    <li>Clean background check</li>
+                    <li>Ability to meet US visa requirements</li>
+                  </ul>
+                  <p class="mt-2">
+                    Our program includes preparation for the NCLEX-RN exam,
+                    credential evaluation assistance, and guidance through the
+                    entire licensing and immigration process.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question: Accountant in US -->
+              <div
+                v-if="
+                  isQuestionVisible('accountant us program requirements cpa')
+                "
+                class="rounded-lg border border-gray-200"
+              >
+                <button
+                  class="flex w-full items-center justify-between p-4 text-left"
+                  @click="toggle('pw2')"
+                >
+                  <span class="font-medium"
+                    >Do I need a CPA certification for the US Accountant
+                    program?</span
+                  >
+                  <Icon
+                    :name="
+                      expandedQuestion === 'pw2'
+                        ? 'heroicons:chevron-up'
+                        : 'heroicons:chevron-down'
+                    "
+                    class="h-5 w-5 text-gray-500"
+                  />
+                </button>
+                <div
+                  v-show="expandedQuestion === 'pw2'"
+                  class="border-t border-gray-200 p-4 text-gray-600"
+                >
+                  <p>
+                    While a US CPA certification is not initially required to
+                    join our program, it significantly enhances your placement
+                    opportunities and earning potential in the US. Our program
+                    includes:
+                  </p>
+                  <ul class="mt-2 list-disc space-y-1 pl-5">
+                    <li>CPA exam preparation support (if desired)</li>
+                    <li>
+                      Credential evaluation to determine US equivalency of your
+                      accounting degree
+                    </li>
+                    <li>
+                      Placement assistance with firms that sponsor work visas
+                    </li>
+                    <li>Guidance on state-specific licensing requirements</li>
+                  </ul>
+                  <p class="mt-2">
+                    Many accountants start in entry or mid-level positions while
+                    pursuing their US CPA certification, which we help
+                    facilitate through our partner educational institutions and
+                    review course providers.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question: Teaching in Ireland -->
+              <div
+                v-if="
+                  isQuestionVisible(
+                    'teaching ireland program requirements qualifications'
+                  )
+                "
+                class="rounded-lg border border-gray-200"
+              >
+                <button
+                  class="flex w-full items-center justify-between p-4 text-left"
+                  @click="toggle('pw3')"
+                >
+                  <span class="font-medium"
+                    >What subjects are in demand for the Teaching in Ireland
+                    program?</span
+                  >
+                  <Icon
+                    :name="
+                      expandedQuestion === 'pw3'
+                        ? 'heroicons:chevron-up'
+                        : 'heroicons:chevron-down'
+                    "
+                    class="h-5 w-5 text-gray-500"
+                  />
+                </button>
+                <div
+                  v-show="expandedQuestion === 'pw3'"
+                  class="border-t border-gray-200 p-4 text-gray-600"
+                >
+                  <p>
+                    Ireland currently has high demand for teachers in several
+                    subject areas:
+                  </p>
+                  <ul class="mt-2 list-disc space-y-1 pl-5">
+                    <li>
+                      STEM subjects (Mathematics, Physics, Chemistry, Computer
+                      Science)
+                    </li>
+                    <li>Foreign languages (particularly European languages)</li>
+                    <li>English as an Additional Language</li>
+                    <li>Special Education</li>
+                    <li>Home Economics</li>
+                  </ul>
+                  <p class="mt-2">
+                    Teachers with qualifications in these high-demand subjects
+                    have excellent placement prospects. However, we also assist
+                    teachers of other subjects as opportunities arise throughout
+                    the Irish education system. Our program includes support for
+                    Teaching Council of Ireland registration and placement in
+                    both public and private institutions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question: Timeline -->
+              <div
+                v-if="
+                  isQuestionVisible(
+                    'professional work program timeline process'
+                  )
+                "
+                class="rounded-lg border border-gray-200"
+              >
+                <button
+                  class="flex w-full items-center justify-between p-4 text-left"
+                  @click="toggle('pw4')"
+                >
+                  <span class="font-medium"
+                    >How long does the professional placement process
+                    take?</span
+                  >
+                  <Icon
+                    :name="
+                      expandedQuestion === 'pw4'
+                        ? 'heroicons:chevron-up'
+                        : 'heroicons:chevron-down'
+                    "
+                    class="h-5 w-5 text-gray-500"
+                  />
+                </button>
+                <div
+                  v-show="expandedQuestion === 'pw4'"
+                  class="border-t border-gray-200 p-4 text-gray-600"
+                >
+                  <p>
+                    The timeline varies by profession and individual
+                    circumstances, but generally follows this pattern:
+                  </p>
+                  <ul class="mt-2 space-y-2">
+                    <li>
+                      <span class="font-medium">Qualification Assessment:</span>
+                      2-4 weeks
+                    </li>
+                    <li>
+                      <span class="font-medium"
+                        >Exam Preparation (if applicable):</span
+                      >
+                      3-6 months (NCLEX-RN for nurses, CPA exams for
+                      accountants)
+                    </li>
+                    <li>
+                      <span class="font-medium">Credential Evaluation:</span>
+                      1-2 months
+                    </li>
+                    <li>
+                      <span class="font-medium">Job Placement Process:</span>
+                      2-4 months
+                    </li>
+                    <li>
+                      <span class="font-medium">Visa Processing:</span> 2-4
+                      months
+                    </li>
+                  </ul>
+                  <p class="mt-2">
+                    In total, candidates should expect 8-12 months from program
+                    enrollment to relocation, though motivated individuals with
+                    existing qualifications may complete the process more
+                    quickly.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question: Success Rate -->
+              <div
+                v-if="
+                  isQuestionVisible(
+                    'professional work program success rate placement'
+                  )
+                "
+                class="rounded-lg border border-gray-200"
+              >
+                <button
+                  class="flex w-full items-center justify-between p-4 text-left"
+                  @click="toggle('pw5')"
+                >
+                  <span class="font-medium"
+                    >What is your success rate for professional
+                    placements?</span
+                  >
+                  <Icon
+                    :name="
+                      expandedQuestion === 'pw5'
+                        ? 'heroicons:chevron-up'
+                        : 'heroicons:chevron-down'
+                    "
+                    class="h-5 w-5 text-gray-500"
+                  />
+                </button>
+                <div
+                  v-show="expandedQuestion === 'pw5'"
+                  class="border-t border-gray-200 p-4 text-gray-600"
+                >
+                  <p>
+                    Our professional placement programs have achieved strong
+                    results:
+                  </p>
+                  <ul class="mt-2 list-disc space-y-1 pl-5">
+                    <li>
+                      Nursing program: 92% placement rate within 12 months
+                    </li>
+                    <li>
+                      Accounting program: 85% placement rate within 12 months
+                    </li>
+                    <li>
+                      Teaching program: 90% placement rate within academic year
+                      cycles
+                    </li>
+                  </ul>
+                  <p class="mt-2">
+                    Success rates are highest for candidates who fully engage
+                    with our preparation programs and maintain flexibility
+                    regarding initial placement locations. While we cannot
+                    guarantee placement, our strong relationships with employers
+                    and thorough preparation significantly increase your chances
+                    of securing appropriate positions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Visa and Applications -->
           <div
             v-if="selectedCategory === 'all' || selectedCategory === 'visa'"
@@ -867,7 +1170,8 @@ const categories = [
   { id: 'visa', name: 'Visa Process' },
   { id: 'finances', name: 'Finances' },
   { id: 'accommodation', name: 'Accommodation' },
-  { id: 'services', name: 'Services' }
+  { id: 'services', name: 'Services' },
+  { id: 'professional-work', name: 'Professional Work' }
 ]
 
 // Search filtering function for questions
