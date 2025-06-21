@@ -261,11 +261,11 @@
               <div class="mt-8">
                 <button
                   type="submit"
-                  class="flex w-full justify-center rounded-full border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                  class="flex w-full justify-center rounded-lg border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
                   :disabled="isSubmitting"
                 >
                   <span v-if="isSubmitting">Processing...</span>
-                  <span v-else>Book Now</span>
+                  <span v-else>Book Consultation</span>
                 </button>
               </div>
             </form>
