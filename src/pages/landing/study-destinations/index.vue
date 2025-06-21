@@ -63,7 +63,7 @@
         <div
           v-for="destination in filteredDestinations"
           :key="destination.id"
-          class="overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
+          class="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
         >
           <div class="relative h-48 w-full overflow-hidden">
             <img
@@ -86,7 +86,7 @@
               </div>
             </div>
           </div>
-          <div class="p-4">
+          <div class="flex flex-grow flex-col p-4">
             <p class="text-gray-600">{{ destination.description }}</p>
 
             <div class="mt-4 flex flex-wrap gap-2">
@@ -118,7 +118,7 @@
               </div>
             </div>
 
-            <div class="mt-6">
+            <div class="mt-auto pt-6">
               <NuxtLink
                 :to="`/landing/study-destinations/${destination.id}`"
                 class="inline-flex w-full items-center justify-center rounded-md bg-red-600 px-4 py-2 text-center text-sm font-medium text-white hover:bg-red-700"
