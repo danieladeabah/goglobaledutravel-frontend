@@ -157,6 +157,9 @@
                     <option value="masters">Master's</option>
                     <option value="phd">PhD</option>
                     <option value="mba">MBA</option>
+                    <option value="nursing-us">Nursing Work in US</option>
+                    <option value="accountant-us">Accountant Work in US</option>
+                    <option value="teacher-ireland">Teaching in Ireland</option>
                     <option value="other">Other</option>
                   </select>
                 </div>

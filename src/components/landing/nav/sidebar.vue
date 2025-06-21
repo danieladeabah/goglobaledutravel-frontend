@@ -113,6 +113,11 @@ const navigationItems = [
     name: 'Student Essentials',
     to: '/landing/student-essentials',
     icon: 'heroicons:book-open'
+  },
+  {
+    name: 'Professional Work',
+    to: '/landing/professional-work',
+    icon: 'heroicons:briefcase'
   }
 ]
 </script>

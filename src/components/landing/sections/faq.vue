@@ -42,14 +42,21 @@ const faqItems = [
       'Yes, we provide comprehensive scholarship assistance. Our advisors help identify suitable scholarship opportunities, guide you through application requirements, and support you in preparing competitive applications to maximize your chances of receiving financial aid.'
   },
   {
-    question: 'How do I know which program is right for me?',
+    question:
+      'What qualifications do I need for the Nursing Work program in the US?',
     answer:
-      'Our advisors conduct thorough assessments of your academic background, career goals, and personal interests to recommend suitable programs. We consider factors such as university reputation, program curriculum, location preferences, and future employment opportunities to ensure the program aligns with your long-term objectives.'
+      'To qualify for our US Nursing Work program, you need a nursing degree from an accredited institution, minimum 2 years clinical experience, NCLEX-RN certification (we provide preparation assistance), English language proficiency, and a clean background check. Our program includes exam preparation, credential evaluation assistance, and complete guidance through the licensing and immigration process.'
   },
   {
-    question: 'Is this service available online?',
+    question: 'Do I need a CPA certification for the US Accountant program?',
     answer:
-      'Yes, our services are available online. We offer virtual consultations, digital document processing, and remote support throughout your application journey, making it convenient for students worldwide to access our expertise regardless of their location.'
+      'While a US CPA certification is not initially required, it significantly enhances your placement opportunities and earning potential. Our program includes CPA exam preparation support, credential evaluation, placement assistance with firms that sponsor work visas, and guidance on state-specific licensing requirements. Many accountants start in entry or mid-level positions while pursuing their US CPA certification.'
+  },
+  {
+    question:
+      'What subjects are in demand for the Teaching in Ireland program?',
+    answer:
+      'Ireland currently has high demand for teachers in STEM subjects, foreign languages, English as an Additional Language, Special Education, and Home Economics. Our program includes support for Teaching Council of Ireland registration and placement in both public and private institutions across Ireland.'
   },
   {
     question: 'How long does the application process typically take?',
